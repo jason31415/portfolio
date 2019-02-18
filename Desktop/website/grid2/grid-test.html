@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+    
+<head>
+    <link href="https://fonts.googleapis.com/css?family=Major+Mono+Display|Open+Sans|Noto+Serif+SC" rel="stylesheet">
+	<link rel ='stylesheet' type='text/css' href='body-style.css'>
+    <link rel ='stylesheet' type='text/css' href='image-style.css'>
+    <link rel ='stylesheet' type='text/css' href='categories-style.css'>
+    <link rel ='stylesheet' type='text/css' href='modal-style.css'>
+</head>
+<body id="body">
+    <div class="grid">
+        
+        <div id="plant-modal" class="modal-container">
+            <div class="modal-content">
+                <div class="title"> <div onclick="close_modal('plant-modal')"class="close">&times;</div> plantbot</div>
+                <div class="modal-crop" style="background-image: url(/images/plantbot.png)">
+                </div>
+                
+                <div class="modal-text">
+                    <ul class="skills">
+                  <li>3D printing</li>
+                  <li>Arduino</li>
+                    <li>CAD</li>
+                    <li>Hardware</li>
+                </ul>
+                <p class="description">Hailing from a different planet where plants are the dominant species, the plantbot allows regular house plants to gain the same level of intellect.</p>
+                <h1>Process</h1>
+                <h1>Inspiration</h1>
+                    </div>
+                
+            </div>
+        </div>
+        <div id="pep-modal" class="modal-container">
+            <div class="modal-content">
+                <div class="title"> <div onclick="close_modal('pep-modal')"class="close">&times;</div> salt & pepper</div>
+                <div class="modal-crop" style="background-image: url(/images/pep.jpg)">
+                </div>
+                
+                <div class="modal-text">
+                    <ul class="skills">
+                  <li>3D printing</li>
+                  <li>Arduino</li>
+                    <li>CAD</li>
+                    <li>Hardware</li>
+                </ul>
+                <p class="description">Hailing from a different planet where plants are the dominant species, the plantbot allows regular house plants to gain the same level of intellect.</p>
+                <p>Process</p>
+                <p>Inspiration</p>
+                    </div>
+            </div>
+        </div>
+        
+        <div id="wobl-modal" class="modal-container">
+            <div class="modal-content">
+                <div class="title"> <div onclick="close_modal('wobl-modal')"class="close">&times;</div> salt & pepper</div>
+                <div class="modal-crop" style="background-image: url(/images/wobl/header.jpg)">
+                </div>
+                
+                <div class="modal-text">
+                    <ul class="skills">
+                        <li>3D printing</li>
+                        <li>Arduino</li>
+                        <li>CAD</li>
+                        <li>Hardware</li>
+                    </ul>
+                    <p class="description">To what degree could machine's me removed from human interference? I wanted to tackle that question by creating robots that would seemingly form their own relationships and create something new. Obviously these are just appearances, as I have yet to delve into the world of AI and ML, but I at least wanted it to appear so.</p>
+                    <h1>Research / Inspiration</h1>
+                    <div class="image-row">
+                        <img class ="modal-image" src="images/wobl/sketch-1.jpg">
+                        <img class ="modal-image" src="images/wobl/sketch-2.jpg">
+                    </div>
+                    
+                    <h1>Process</h1>
+                    
+                </div>
+            </div>
+        </div>
+        
+        <div class="menu">
+            <h1 id="name">jas<a id="o">o</a>n pi</h1>
+            <span id="menu-opts">
+                <h1 onclick="image_open()"id="opt-work" class= "active">work</h1>
+                <h1 onclick="image_close()"id="opt-about">about</h1>
+                <h1 id="right-arrow">></h1>
+            </span>
+        </div>
+        <div id="menu-about" class="about-page">
+            <span id="about-intro"><img id="headshot" src="images/headshot.jpg">
+            <h1>Hi, I'm a junior studying design and computer science at the University of Michigan.</h1></span>
+            <h2>I want my designs to be playful, and evoke joy and intrigue. I strive to apply my creative vision holistically by integrating my knowledge in both design and technology. </h2>
+            <h1>Skills</h1>
+            <ul id="about-skills">
+                <li>Webdev: HTML, CSS, JS (I made this website from scratch!)</li>
+                <li>Software: C++, Python</li>
+                <li>Hardware: Arduino, Raspberry Pi</li>
+                <li>Industrial Design</li>
+                <li>Graphic Design</li>
+                <li>UX/UI</li>
+            </ul>
+            <h2>I spend most of my free time listening to music, dancing, and tinkering.</h2>
+        </div>
+        
+        <div id="menu-images"class="images">
+            <ul class="categories">
+                <div id="buttons">
+                <li><button class="btn active" onclick="filterSelection('all')">all</button></li>
+                <li><button class="btn" onclick="filterSelection('id')">product design</button></li>
+                <li><button class="btn" onclick="filterSelection('graphic')">graphic</button></li>
+                <li><button class="btn" onclick="filterSelection('elec')">electronic</button></li>
+                </div>
+            </ul>
+            <div class="crop plant id elec" style="background-image: url(/images/plantbot.png)" onclick="open_modal('plant-modal')">
+            </div>
+
+            <div class="crop pep id" style="background-image: url(/images/pep.jpg)" onclick="open_modal('pep-modal')"></div>
+
+            <div class="crop mood id pagebtn" style="background-image: url(/images/mood2.jpg)"></div>
+            
+            <div class="crop wobl id elec" style="background-image: url(/images/wobl/header.jpg)" onclick="open_modal('wobl-modal')"></div>
+            
+            <div class="crop bliss graphic" style="background-image: url(/images/bliss.gif)"></div>
+            
+            <div class="crop dmix graphic" style="background-image: url(/images/dmix.png)"></div>
+            
+            <div class="crop rmp electric" style="background-image: url(/images/rmp-iso.PNG)"></div>
+            
+            <div class="crop calc id electric" style="background-image: url(/images/calc.png)"></div>
+            
+            <div class="crop xondas id electric" style="background-image: url(/images/xondas.png)"></div>
+        </div>
+        <div id="particles-js">
+            <script type=text/javascript src="particles.js"></script>
+            <script type=text/javascript src="app.js"></script>
+        </div>
+        <div id="particles-js2">
+            <script type=text/javascript src="app2.js"></script>
+        </div>
+        <footer>email: japi@umich.edu</footer>
+    </div>
+    <script type=text/javascript src="filter.js"></script>
+    <script type=text/javascript src="pages.js"></script>
+    <script type=text/javascript src="menu.js"></script>
+	
+    
+</body>
+
+</html>

@@ -1,0 +1,214 @@
+
+@media only screen and (min-width: 1000px) {
+    .crop {
+        min-width: 200px;
+        min-height: 200px;
+        filter: grayscale() opacity(.4) blur(.5px);
+    }
+    .images {
+        min-height: 500px;
+        min-width: 1000px;
+        grid-column: 2/5;
+        grid-row: 2/10;
+        grid-template-columns: .5fr 1fr 1fr 1fr;
+        grid-template-areas: 
+        "cat plant plant mood"
+        "cat xondas xondas  calc"
+        "cat dmix wobl wobl"
+        "cat dmix rmp bliss"
+        "cat pep pep pep";
+    }
+    .categories li {
+        float: right;
+        margin-right: 25px;
+    }
+}
+
+@media only screen and (max-width: 1000px) {
+    .crop {
+        width: 100%;
+        height: 150px;
+        filter: grayscale() opacity(.4) blur(.5px);
+    }
+    .images {
+        min-width: 800px;
+        grid-column: 2/5;
+        grid-row: 2/15;
+        grid-template-columns: .5fr 1fr 1fr;
+        grid-template-areas: 
+        "cat plant wobl"
+        "cat dmix mood"
+        "cat rmp calc"
+        "cat pep blank";
+    }
+    .categories li {
+        float: right;
+        margin-right: 25px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .crop {
+        width: 100%;
+        height: 150px;
+        filter: grayscale() opacity(.4) blur(.5px);
+    }
+    .images {
+        min-width: 0;
+        grid-column: 2/4;
+        grid-row: 2/10;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+        "cat cat"
+        "plant wobl"
+        "bliss rmp"
+        "pep mood"
+        "calc dmix";
+    }
+    .categories li {
+        float: left;
+        margin-right: 10px;
+    }
+    .categories {
+        width: 90%;
+    }
+}
+@media only screen and (max-width: 720px) {
+    .crop {
+        width: 100%;
+        filter: grayscale(0) opacity(1) blur(0);
+    }
+    .images {
+        margin-top: -50px;
+        grid-column: 2/4;
+        grid-row: 2/10;
+        grid-template-columns: 100%;
+        grid-template-areas: 
+        "plant"
+        "bliss"
+        "pep"
+        "calc"
+            "xondas"
+            "wobl"
+            "dmix"
+            "rmp"
+            "mood";
+    }
+    .categories li {
+        display: none;
+        line-height: 10px;
+    }
+}
+
+.images {
+    display: grid;
+    grid-template-rows: auto;
+    grid-gap: 10px;
+}
+.categories {
+    grid-area: cat;
+    white-space: nowrap;
+}
+
+.crop {
+    box-shadow:  0 0 5px #B9B9B9;
+    cursor: pointer;
+    border-radius: 4px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.images .show {
+    filter: opacity(1);
+}
+
+.crop.show:active {
+    filter: brightness(.9);
+    box-shadow: inset 0 0 0px #B9B9B9;
+}
+
+
+.images:hover + #particles-js {
+    filter: blur(2px);
+    image-resolution: 100px 200px;
+}
+
+.mood {
+    grid-area: mood;
+    background-position: 50% 30%;
+    transition: background-position 1.5s;
+}
+
+.mood.show:hover {
+    background-position: 50% 90%;
+}
+
+.pep {
+    grid-area: pep;
+    background-size: 150%;
+    background-position: 50% 35%;
+    transition: background-position 1s;
+}
+
+.pep.show:hover {
+    background-position: 50% 100%;
+}
+
+
+.plant {
+    grid-area: plant;
+    background-size: 130%;
+    background-position: 20% 33%;
+    transition: background-position 1.5s;
+}
+
+.plant.show:hover {
+    background-position: 20% 77%;
+}
+
+.wobl {
+    grid-area: wobl;
+    background-size: 100%;
+    background-position: 0 17%;
+    transition: background-position 1.5s;
+}
+
+.wobl.show:hover {
+    background-position: 20% 77%;
+}
+
+.bliss {
+    grid-area: bliss;
+    background-size: 150%;
+    transition: background-position 1.5s;
+}
+.dmix {
+    grid-area: dmix;
+    background-size: 100%;
+    background-position: 0% 20%;
+    transition: background-position 1.5s;
+}
+
+.rmp {
+    grid-area: rmp;
+    background-size: 100%;
+    background-position: 0% 20%;
+    transition: background-position 1.5s;
+}
+
+.calc {
+    grid-area: calc;
+    background-size: 110%;
+    background-position: 50% 50%;
+    transition: background-position 1.5s;
+}
+
+.xondas {
+    grid-area: xondas;
+    background-size: 120%;
+    background-position: 50% 20%;
+    transition: background-position 1.5s;
+}

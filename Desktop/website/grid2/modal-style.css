@@ -1,0 +1,137 @@
+
+@media only screen and (min-width: 900px) {
+    .modal-container {
+        grid-column: 1/6;
+        grid-row: 2/10;
+        margin-left: 2%;
+        margin-right: 2%;
+        filter: drop-shadow(0 0 2px #B9B9B9);
+    }
+}
+@media only screen and (max-width: 900px) {
+    .modal-container {
+        grid-column: 1/5;
+        grid-row: 2/20;
+        margin-left: 2%;
+        margin-right: 2%;
+        filter: drop-shadow(0 0 2px #B9B9B9);
+    }
+}
+@media only screen and (max-width: 720px) {
+    .modal-container {
+        grid-column: 1/5;
+        grid-row: 1/20;
+        overflow: scroll;
+        filter: drop-shadow(0 0 0 #B9B9B9);
+    }
+}
+
+.modal-container {
+    max-height: 95vh;
+    border-radius: 5px;
+    top: 2%;
+    position: fixed;
+    overflow-y: auto;
+    display: none; /* Hidden by default */
+    z-index: 10; /* Sit on top */      
+    overflow: auto; /* Enable scroll if needed */
+    background-color: white;
+}
+
+.modal-content {
+    padding: 0px;
+    display: grid;
+    grid-auto-rows: auto;
+    grid-template-areas: 
+        "title title"
+        "crop crop"
+        "skills skills"
+        "text text";
+}
+
+.modal-crop {
+    margin-top: -110px;
+    height: 300px;
+    grid-area: crop;
+    display: block;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    object-fit: cover;
+}
+
+/* The Close Button */
+.modal-content .close {
+    top: 50px;
+    left: 30px;
+    width: 10px;
+    position: sticky;
+    font-family: "Big Caslon";
+    color: black;
+    font-size: Lighter;
+    font-size: 100px;
+    line-height: 0px;
+}
+.modal-content .skills {
+    margin-top: -50px;
+    color: #FF4C30;
+    grid-area: skills;
+    font-family: "Noto Serif SC";
+    font-weight: regular;
+    font-size: 30px;
+    list-style: disc;
+    padding-left: 75px;
+    
+}
+.skills li {
+    float: left;
+    width: 40%;
+    margin-right: 50px;
+    white-space: nowrap;
+}
+.modal-content .title {
+    padding-right: 5%;
+    grid-area: title;
+    background-color: rgba(255, 255, 255, 0.2);
+    z-index: 5;
+    text-align: right;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    position: sticky;
+    top: 0;
+    font-family: "Big Caslon";
+    font-size: 60px;
+}
+
+.modal-content .description {
+    
+    font-family: "Noto Serif SC";
+    grid-area: description;
+    font-size: 20px;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+}
+.modal-text {
+    grid-area: text;
+    padding: 10%;
+}
+
+.modal-content h1 {
+    font-family: "Major Mono Display";
+}
+.modal-image {
+    max-width: 30%;
+    min-width: 300px;
+    display: inline-block;
+}
+.image-row {
+    width: 100%;
+}
+.close:hover,
+.close:focus {
+  color: #FF4C30;
+  text-decoration: none;
+  cursor: pointer;
+}

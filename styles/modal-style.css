@@ -8,7 +8,6 @@
         filter: drop-shadow(0 0 2px #B9B9B9);
     }
 }
-/*
 @media only screen and (max-width: 900px) {
     .modal-container {
         grid-column: 1/5;
@@ -18,8 +17,7 @@
         filter: drop-shadow(0 0 2px #B9B9B9);
     }
 }
-*/
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 720px) {
     .modal-container {
         grid-column: 1/5;
         grid-row: 1/20;

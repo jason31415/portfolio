@@ -1,5 +1,5 @@
 
-@media only screen and (min-width: 900px) {
+@media only screen and (min-width: 1150px) {
     .grid {
         height: 100%;
         z-index: 1;
@@ -25,7 +25,7 @@
         margin-left: 30px;
     }
 }
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1150px) {
     .grid {
         height: 100%;
         z-index: 1;
@@ -78,9 +78,6 @@ footer {
     font-family: "Major Mono Display";
     font-size: 15px;
     font-weight: bolder;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
     line-height: 40px;
     background-color: rgba(255, 255, 255, 0.2);
 }

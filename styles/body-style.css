@@ -86,7 +86,8 @@ footer {
 }
 .menu {
     color: #240C03;
-    font-family: "Big Caslon";
+    font-family: "Source Code Pro", monospace;
+    font-weight: bolder;
 }
 
 ul {
@@ -145,8 +146,10 @@ body {
 }
 
 #opt-about, #opt-work {
-    font-family: "Major Mono Display";
+    font-family: "Source Code Pro";
     cursor: pointer;
+    font-weight: lighter;
+    font-size: 40px;
 }
 
 .menu .active {

@@ -8,21 +8,25 @@
         grid-auto-rows: auto;
     }
     .menu {
-        margin-top: -50px;
         grid-row: 1/1;
         grid-column: 2/5;
-        margin-bottom: -40px;
     }
     
     .about-page {
          grid-column: 2/5;
         grid-row: 2/10;
     }
+    #menu-opts {
+        margin-left: 50px;
+    }
     #opt-about, #opt-work {
         white-space: nowrap;
         display: inline-block;
         font-size: 30px;
         margin-left: 30px;
+    }
+    #right-arrow {
+        display: inline-block;
     }
 }
 @media only screen and (max-width: 1150px) {
@@ -34,40 +38,47 @@
         grid-auto-rows: auto;
     }
     .menu {
-        margin-top: -50px;
         grid-row: 1/1;
-        grid-column: 2/5;
-        margin-bottom: -40px;
+        grid-column: 2/4;
+        
     }
     
     .about-page {
          grid-column: 2/4;
         grid-row: 2/10;
     }
-    #opt-about, #opt-work {
+    #menu-opts {
         white-space: nowrap;
+        margin-left: 30px;
+    }
+    #opt-about, #opt-work {
         display: inline-block;
         font-size: 30px;
         margin-left: 30px;
     }
+    #right-arrow {
+        display: inline-block;
+    }
 }
 
-@media only screen and (max-width: 720px) {
-    .menu {
-        margin-top: 0;
-        line-height: 10px;
-        margin-bottom: 0px;
-    }
+@media only screen and (max-width: 680px) {
     .about-page {
-        margin-top: -70px;
          grid-column: 2/4;
         grid-row: 2/10;
     }
+    #name {
+        margin-bottom: 0px;
+    }
+    #menu-opts {
+        margin-left: 0px;
+    }
     #opt-about, #opt-work {
-        display: block;
-        font-size: 40px;
         margin-left: 0;
-        padding-bottom: 10px;
+        display: inline-block;
+        font-size: 30px;
+    }
+    #right-arrow {
+        display: none;
     }
 }
 .grid {
@@ -79,12 +90,9 @@ footer {
     font-size: 15px;
     font-weight: bolder;
     line-height: 40px;
-    background-color: rgba(255, 255, 255, 0.2);
 }
 .menu {
     color: #240C03;
-    font-family: "Source Code Pro", monospace;
-    font-weight: bolder;
 }
 
 ul {
@@ -97,13 +105,9 @@ ul {
     font-size: 30px;
     transform: translateX(-270px);
     transition: transform .5s;
-    display: inline-block;
     font-family: "Major Mono Display";
 }
 
-#menu-opts {
-    white-space: nowrap;
-}
 body {
     margin: 0;
     padding: 0;
@@ -132,9 +136,14 @@ body {
 }
 
 #name {
+    border: dashed 2px #FF4C30;
+    background-color: rgba(255, 255, 255, 0.5);
+    padding: 15px;
+    color: #FF4C30;
+    font-family: "Major Mono Display";
     font-weight: lighter;
-    font-size: 75px;
-    margin-right: 50px;
+    font-size: 50px;
+    margin-right: 0px;
     display: inline-block;
 }
 
@@ -143,10 +152,9 @@ body {
 }
 
 #opt-about, #opt-work {
-    font-family: "Source Code Pro";
+    font-family: "Major Mono Display";
     cursor: pointer;
-    font-weight: lighter;
-    font-size: 40px;
+    font-weight: ;
 }
 
 .menu .active {
@@ -174,20 +182,23 @@ body {
     font-size: 25px;
 }
 .btn {
+    border-bottom: dashed 0px #FF4C30;
     z-index: 1;
     font-family: "Major Mono Display";
-    font-size: 15px;
-    font-weight: bolder;
-    border: none;
+    font-size: 20px;
+    font-weight: lighter;
+    border-top: none;
+    border-right: none;
+    border-left: none;
     outline: none;
-    padding: 0 10px;
+    padding: 0 0px;
     background-color: transparent;
     cursor: pointer;
 }
 
 
 .btn.active {
-    text-decoration: underline;
+    border-bottom: dashed 1px #FF4C30;
     color: #FF4C30;
 }
 .btn:hover {

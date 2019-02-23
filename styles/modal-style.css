@@ -1,33 +1,24 @@
 
 @media only screen and (min-width: 900px) {
     .modal-container {
-        grid-column: 1/6;
-        grid-row: 2/10;
-        margin-left: 2%;
-        margin-right: 2%;
-        filter: drop-shadow(0 0 2px #B9B9B9);
+        filter: drop-shadow(0 0 5px rgba(0,0,0,0.5));
     }
 }
 @media only screen and (max-width: 900px) {
     .modal-container {
-        grid-column: 1/5;
-        grid-row: 2/20;
-        margin-left: 2%;
-        margin-right: 2%;
-        filter: drop-shadow(0 0 2px #B9B9B9);
+        filter: drop-shadow(0 0 0px black);
     }
 }
 @media only screen and (max-width: 720px) {
     .modal-container {
-        grid-column: 1/5;
-        grid-row: 1/20;
         overflow: scroll;
-        filter: drop-shadow(0 0 0 #B9B9B9);
+        filter: drop-shadow(0 0 5px rgba(0,0,0,0.5));
     }
 }
 
 .modal-container {
-    max-height: 95vh;
+    margin: 2.5% 5% 5% 5%;
+    max-height: 90vh;
     border-radius: 5px;
     top: 2%;
     position: fixed;
@@ -63,11 +54,11 @@
 
 /* The Close Button */
 .modal-content .close {
-    top: 50px;
-    left: 30px;
+    top: 40px;
+    left: 20px;
     width: 10px;
     position: sticky;
-    font-family: "Source Code Pro";
+    font-family: "Major Mono Display";
     color: black;
     font-size: Lighter;
     font-size: 100px;
@@ -100,12 +91,11 @@
     padding-bottom: 15px;
     position: sticky;
     top: 0;
-    font-family: "Source Code Pro";
+    font-family: "Major Mono Display";
     font-size: 60px;
 }
 
 .modal-content .description {
-    
     font-family: "Source Code Pro";
     grid-area: description;
     font-size: 20px;
@@ -134,4 +124,13 @@
   color: #FF4C30;
   text-decoration: none;
   cursor: pointer;
+}
+#modal-filter {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    background-color: black;
+    opacity: .2;
+    width: 100%;
+    height: 100vh;
 }

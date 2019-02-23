@@ -3,80 +3,94 @@
     
 <head>
     <meta name="viewport" content="initial-scale=1, maximum-scale=1">
-    <link href="https://fonts.googleapis.com/css?family=Major+Mono+Display|Open+Sans|Noto+Serif+SC|Source+Code+Pro" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Major+Mono+Display|Open+Sans|Noto+Serif+SC|Source+Code+Pro|Vollkorn" rel="stylesheet">
 	<link rel ='stylesheet' type='text/css' href='styles/body-style.css'>
     <link rel ='stylesheet' type='text/css' href='styles/image-style.css'>
     <link rel ='stylesheet' type='text/css' href='styles/modal-style.css'>
 
 </head>
 <body id="body">
-    <div class="grid">
-        
-        <div id="plant-modal" class="modal-container">
-            <div class="modal-content">
-                <div class="title"> <div onclick="close_modal('plant-modal')"class="close">&times;</div> plantbot</div>
-                <div class="modal-crop" style="background-image: url(/images/plantbot.png)">
-                </div>
-                
-                <div class="modal-text">
-                    <ul class="skills">
-                  <li>3D printing</li>
-                  <li>Arduino</li>
+    <div id="plant-modal" class="modal-container">
+        <div class="modal-content">
+            <div class="title"> <div onclick="close_modal('plant-modal')"class="close">&times;</div> plantbot</div>
+            <div class="modal-crop" style="background-image: url(/images/plantbot.png)">
+            </div>
+
+            <div class="modal-text">
+                <ul class="skills">
+                    <li>3D printing</li>
+                    <li>Arduino</li>
                     <li>CAD</li>
                     <li>Hardware</li>
                 </ul>
                 <p class="description">Hailing from a different planet where plants are the dominant species, the plantbot allows regular house plants to gain the same level of intellect.</p>
                 <h1>Process</h1>
                 <h1>Inspiration</h1>
-                    </div>
-                
+                <h1>Figuring Out the Sensors</h1>
+                <h1>Mapping the Functionality</h1>
+                <h1>Form Exploration</h1>
+                <h1>3D Printing & Assembly</h1>
             </div>
         </div>
-        <div id="pep-modal" class="modal-container">
-            <div class="modal-content">
-                <div class="title"> <div onclick="close_modal('pep-modal')"class="close">&times;</div> salt & pepper</div>
-                <div class="modal-crop" style="background-image: url(/images/pep.jpg)">
-                </div>
-                
-                <div class="modal-text">
-                    <ul class="skills">
-                  <li>3D printing</li>
-                  <li>Arduino</li>
+    </div>
+        
+    <div id="wobl-modal" class="modal-container">
+        <div class="modal-content">
+            <div class="title"> <div onclick="close_modal('wobl-modal')"class="close">&times;</div> wobl bobl</div>
+            <div class="modal-crop" style="background-image: url(/images/wobl/header.jpg)">
+            </div>
+
+            <div class="modal-text">
+                <ul class="skills">
+                    <li>3D printing</li>
+                    <li>Arduino</li>
                     <li>CAD</li>
                     <li>Hardware</li>
                 </ul>
-                <p class="description">Hailing from a different planet where plants are the dominant species, the plantbot allows regular house plants to gain the same level of intellect.</p>
-                <p>Process</p>
-                <p>Inspiration</p>
-                    </div>
+                <p class="description">To what degree could machine's me removed from human interference? I wanted to tackle that question by creating robots that would seemingly form their own relationships and create something new. Obviously these are just appearances, as I have yet to delve into the world of AI and ML, but I at least wanted it to appear so.</p>
+                <h1>Research / Inspiration</h1>
+                <div class="image-row">
+                    <img class ="modal-image" src="images/wobl/sketch-1.jpg">
+                    <img class ="modal-image" src="images/wobl/sketch-2.jpg">
+                </div>
+
+                <h1>Process</h1>
+                <h1>Figuring Out IR Sending & Receiving</h1>
+                <h1>Building The Robots</h1>
+                <h1>Form Exploration</h1>
+                <h1>3D Printing & Assembly</h1>
             </div>
         </div>
-        
-        <div id="wobl-modal" class="modal-container">
-            <div class="modal-content">
-                <div class="title"> <div onclick="close_modal('wobl-modal')"class="close">&times;</div> salt & pepper</div>
-                <div class="modal-crop" style="background-image: url(/images/wobl/header.jpg)">
+    </div>
+    <div id="pep-modal" class="modal-container">
+        <div class="modal-content">
+            <div class="title"> <div onclick="close_modal('pep-modal')"class="close">&times;</div> salt & pepper</div>
+            <div class="modal-crop" style="background-image: url(/images/pep.jpg)">
+            </div>
+
+            <div class="modal-text">
+                <ul class="skills">
+                    <li>3D printing</li>
+                    <li>CAD</li>
+                    <li>Moldmaking</li>
+                    <li>Ceramics</li>
+                </ul>
+                <p class="description">How could one encourage communication between families?</p>
+                <h1>Research / Inspiration</h1>
+                <div class="image-row">
+                    <img class ="modal-image" src="images/wobl/sketch-1.jpg">
+                    <img class ="modal-image" src="images/wobl/sketch-2.jpg">
                 </div>
-                
-                <div class="modal-text">
-                    <ul class="skills">
-                        <li>3D printing</li>
-                        <li>Arduino</li>
-                        <li>CAD</li>
-                        <li>Hardware</li>
-                    </ul>
-                    <p class="description">To what degree could machine's me removed from human interference? I wanted to tackle that question by creating robots that would seemingly form their own relationships and create something new. Obviously these are just appearances, as I have yet to delve into the world of AI and ML, but I at least wanted it to appear so.</p>
-                    <h1>Research / Inspiration</h1>
-                    <div class="image-row">
-                        <img class ="modal-image" src="images/wobl/sketch-1.jpg">
-                        <img class ="modal-image" src="images/wobl/sketch-2.jpg">
-                    </div>
-                    
-                    <h1>Process</h1>
-                    
-                </div>
+
+                <h1>Process</h1>
+                <h1>Ergonomic Study</h1>
+                <h1>Form Exploration</h1>
+                <h1>Casting</h1>
             </div>
         </div>
+    </div>
+    <div id="modal-filter"></div>
+    <div class="grid">
         
         <div class="menu">
             <h1 id="name">jas<a id="o">o</a>n pi</h1>

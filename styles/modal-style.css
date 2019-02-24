@@ -1,7 +1,7 @@
 
 @media only screen and (min-width: 680px) {
     .modal-container {
-        max-height: 90vh;
+        max-height: 85vh;
         margin: 5%;
         filter: drop-shadow(0 0 0px black);
         border-radius: 5px;
@@ -28,7 +28,7 @@
 .modal-content {
     padding: 0px;
     display: grid;
-    grid-auto-rows: auto;
+    grid-auto-rows: aut8;
     grid-template-areas: 
         "title title"
         "crop crop"
@@ -42,7 +42,7 @@
     height: 300px;
     grid-area: crop;
     display: block;
-    background-position: center;
+    background-position: 0% 30%;
     background-size: cover;
     background-repeat: no-repeat;
     overflow: hidden;
@@ -50,7 +50,6 @@
     margin-left: 5%;
     margin-right: 5%;
 }
-
 /* The Close Button */
 .modal-content .close {
     top: 33px;

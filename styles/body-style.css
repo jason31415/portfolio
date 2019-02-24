@@ -40,6 +40,7 @@
     .menu {
         grid-row: 1/1;
         grid-column: 2/4;
+        white-space: nowrap;
         
     }
     
@@ -71,6 +72,9 @@
     }
     #menu-opts {
         margin-left: 0px;
+    }
+    .menu {
+        white-space: normal;
     }
     #opt-about, #opt-work {
         margin-left: 0;
@@ -162,7 +166,7 @@ body {
 }
 
 .about-page {
-    font-family: "Noto Serif SC";
+    font-family: "Source Code Pro";
     display: none;
 }
 
@@ -179,7 +183,7 @@ body {
 }
 #about-intro {
     display: inline-block;
-    font-size: 25px;
+    font-size: 20px;
 }
 .btn {
     border-bottom: dashed 0px #FF4C30;

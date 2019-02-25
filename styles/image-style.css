@@ -14,8 +14,7 @@
         grid-template-areas: 
         "cat plant plant mood"
         "cat xondas xondas mood"
-        "cat rmp wobl wobl"
-        "cat pep pep pep";
+        "cat pep wobl wobl"
     }
     .categories li {
         float: right;
@@ -38,8 +37,8 @@
         grid-template-columns: .5fr 1fr 1fr .25fr;
         grid-template-areas: 
         "cat plant wobl"
-        "cat pep mood"
-        "cat rmp xondas";
+        "cat mood xondas"
+        "cat pep blank";
     }
     .categories li {
         float: right;
@@ -60,8 +59,8 @@
         grid-template-areas: 
         "cat cat"
         "plant wobl"
-        "mood rmp"
-        "pep xondas";
+        "mood xondas"
+        "pep blank";
     }
     .categories li {
         float: left;
@@ -110,7 +109,6 @@
 }
 
 .crop {
-    box-shadow: 0 0px 0px #B9B9B9;
     cursor: pointer;
     border-radius: 4px;
     background-position: center;
@@ -122,12 +120,13 @@
 
 .images .show {
     filter: opacity(1);
-    box-shadow: 0 0px 5px #B9B9B9;
+    border:  2px #FF4C30;
+    box-shadow: 0 2px 2px rgba(0,0,0,0.2);
 }
 
 .crop.show:active {
     filter: brightness(.9);
-    box-shadow: 0 0px 0px #B9B9B9;
+    box-shadow: 0 0px 0px rgba(0,0,0,0.2);
 }
 
 
@@ -135,6 +134,7 @@
     filter: blur(2px);
     image-resolution: 100px 200px;
 }
+
 
 .mood {
     grid-area: mood;
@@ -195,6 +195,7 @@
 }
 
 .rmp {
+    display: none;
     grid-area: rmp;
     background-size: 100%;
     background-position: 0% 20%;
@@ -214,4 +215,36 @@
     background-size: 120%;
     background-position: 50% 20%;
     transition: background-position 1.5s;
+}
+
+.date {
+    transform: rotateZ(90deg);
+    display: block;
+    opacity: 1;
+    color: #FF4C30;
+    font-family: "Major Mono Display";
+    font-size: 15px;
+    transition: all 1s;
+    font-weight: bold;
+    position: absolute;
+    left: -50px;
+    top: -100px;
+}
+.show.crop:hover .date {
+     top: 45%;
+    opacity: 1;
+}
+.img-title {
+    display: inline-block;
+    color: #FF4C30;
+    font-family: "Major Mono Display";
+    font-size: 30px;
+    font-weight: bold;
+    position: absolute;
+    bottom: 10%;
+    right: -80%;
+    transition: all 1s;
+}
+.show.crop:hover .img-title {
+    right: 2%;
 }

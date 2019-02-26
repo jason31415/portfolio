@@ -34,7 +34,7 @@
     height: 50vh;
     margin-left: 5%;
     display: none;
-    background-position: 0% 30%;
+    background-position: 50% 30%;
     background-size: cover;
     background-repeat: no-repeat;
     overflow: hidden;
@@ -128,29 +128,40 @@
     height: 100vh;
 }
 #img-left {
+    padding-bottom: 4px;
+    height: 50px;
+    width: 50px;
     border: none;
     z-index: 1;
-    border-radius: 5px;
+    border-radius: 50px;
+    border: dashed 2px white;
     font-family: "Major Mono Display";
     font-size: 40px;
-    left: 5%;
+    left: 7%;
     cursor: pointer;
     position: absolute;
-    background-color: rgba(255,255,255,0.5);
-    top: 33%;
+    background-color: rgba(255,255,255,0);
+    top: 60%;
+    color: #FF4C30;
 }
 #img-right {
+    padding-bottom: 4px;
+    height: 50px;
+    width: 50px;
     border: none;
     z-index: 1;
-    border-radius: 5px;
+    border-radius: 50px;
+    border: dashed 2px white;
     font-family: "Major Mono Display";
     font-size: 40px;
-    right: 5%;
+    right: 7%;
     cursor: pointer;
     position: absolute;
-    background-color: rgba(255,255,255,0.5);
-    top: 33%;
+    background-color: rgba(255,255,255,0);
+    top: 60%;
+    color: #FF4C30;
 }
 #img-left:hover,#img-right:hover {
+    border-color: #FF4C30;
     color: #FF4C30;
 }

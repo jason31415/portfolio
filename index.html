@@ -13,7 +13,14 @@
     <div id="plant-modal" class="modal-container">
         <div class="modal-content">
             <div class="title"> <div onclick="close_modal('plant-modal')"class="close">&times;</div> plantbot</div>
-            <div class="modal-crop" style="background-image: url(/images/plantbot/header.png)">
+            <div class="carousel">
+                <button id="img-left" onclick="img_left()"><</button>
+                <button id="img-right" onclick="img_right()">></button>
+                <div class="modal-images">
+                    <div class="modal-crop" style="background-image: url(/images/plantbot/header.png)"></div>
+                    <div class="modal-crop" style="background-image: url(/images/plantbot/body.gif)"></div>
+                    <div class="modal-crop" style="background-image: url(/images/plantbot/DSC_0137.JPG)"></div>
+                </div>
             </div>
 
             <div class="modal-text">
@@ -26,6 +33,7 @@
                     <li>Hardware</li>
                 </ul>
                 <h1>Process</h1>
+                <p>I had to first learn how to program an arduino. Once I learned the potential  and work with the sensors</p>
                 <h1>Inspiration</h1>
                 <h1>Figuring Out the Sensors</h1>
                 <h1>Mapping the Functionality</h1>
@@ -38,19 +46,38 @@
     <div id="wobl-modal" class="modal-container">
         <div class="modal-content">
             <div class="title"> <div onclick="close_modal('wobl-modal')"class="close">&times;</div> wobl bobl</div>
-            <div class="modal-crop" style="background-image: url(/images/wobl/header.jpg)">
+            <div class="carousel">
+                <button id="img-left" onclick="img_left()"><</button>
+                <button id="img-right" onclick="img_right()">></button>
+                <div class="modal-images">
+                    <div class="modal-crop" style="background-image: url(/images/wobl/header.jpg)"></div>
+                    <div class="modal-crop" style="background-image: url(/images/wobl/wobl/DSC_0227.JPG)"></div>
+                    <div class="modal-crop" style="background-image: url(/images/wobl/wobl/DSC_0243.JPG)"></div>
+                </div>
             </div>
+            
 
             <div class="modal-text">
                 <h1>Can machines create their own ecosystem without the need of human interference?</h1>
                 <p class="description">I wanted to tackle that question by creating robots that would interact on their own and generate ideas. </p>
-                <ul class="skills">
-                    <li>3D printing</li>
-                    <li>Arduino</li>
-                    <li>CAD</li>
-                    <li>Hardware</li>
-                </ul>
-                
+                <div class="modal-row">
+                    <div class="col">
+                        <div class="col-title">skills</div>
+                        <ul class="list">
+                            <li>id</li>
+                            <li>hardware</li>
+                            <li>software</li>
+                            <li>3d printing</li>
+                        </ul>
+                    </div>
+                    <div class="col">
+                        <div class="col-title">tools</div>
+                        <ul class="list">
+                            <li>arduino</li>
+                            <li>fusion360</li>
+                        </ul>
+                    </div>
+                </div>
                 <h1>Research / Inspiration</h1>
                 <div class="image-row">
                     <img class ="modal-image" src="images/wobl/sketch-1.jpg">

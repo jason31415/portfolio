@@ -26,85 +26,77 @@
 }
 
 .modal-content {
-    padding: 0px;
-    display: grid;
-    grid-auto-rows: aut8;
-    grid-template-areas: 
-        "title title"
-        "crop crop"
-        "skills skills"
-        "text text";
 }
 
 .modal-crop {
+    width: 90%;
     border-radius: 5px;
-    margin-top: 0px;
-    height: 300px;
-    grid-area: crop;
-    display: block;
+    height: 50vh;
+    margin-left: 5%;
+    display: none;
     background-position: 0% 30%;
     background-size: cover;
     background-repeat: no-repeat;
     overflow: hidden;
     object-fit: cover;
-    margin-left: 5%;
-    margin-right: 5%;
 }
 /* The Close Button */
 .modal-content .close {
-    top: 33px;
+    position: absolute;
+    top: 4px;
     left: 5%;
     width: 10px;
-    position: sticky;
     font-family: "Major Mono Display";
     color: black;
     font-size: Lighter;
     font-size: 60px;
-    line-height: 0px;
 }
-.modal-content .skills {
+.modal-row {
     display: inline-block;
-    color: #FF4C30;
-    grid-area: skills;
-    font-family: "Source Code Pro";
-    font-weight: regular;
-    font-size: 30px;
-    list-style: disc;
-    padding-left: 75px;
-    
+    width: 100%;
 }
-.skills li {
+.modal-content .col {
+    display: inline-block;
     float: left;
-    width: 40%;
-    margin-right: 50px;
-    white-space: nowrap;
+    color: #FF4C30;
+    font-family: "Major Mono Display";
+    min-width: 200px;
+    width: 33%;
+    margin-bottom: 10px
+}
+.col-title {
+    font-size: 30px;
+    font-weight: bold;
+}
+.col li{
+    font-size: 20px;
+    list-style: disc;
 }
 .modal-content .title {
     box-shadow: 0 0px 0px rgba(0, 0, 0, 0.2);
     padding-right: 5%;
-    grid-area: title;
-    background-color: rgba(255, 255, 255, 0.3);
-    z-index: 5;
+    background-color: rgba(255, 255, 255, 0.5);
+    z-index: 1;
     text-align: right;
-    padding-top: 15px;
-    padding-bottom: 15px;
+    padding-top: 2vh;
+    padding-bottom: 2vh;
     position: sticky;
     top: 0;
     font-family: "Major Mono Display";
     font-size: 40px;
     font-weight: bolder;
+    color: #FF4C30;
 }
 
 .modal-content .description {
     font-family: "Source Code Pro";
-    grid-area: description;
     font-size: 20px;
-    display: inline-block;
+    display: lock;
     justify-content: center;
     align-items: center;
 }
 .modal-text {
-    grid-area: text;
+    display: inline-block;
     padding-left: 5%;
     padding-right: 5%;
 }
@@ -134,4 +126,31 @@
     opacity: .1;
     width: 100%;
     height: 100vh;
+}
+#img-left {
+    border: none;
+    z-index: 1;
+    border-radius: 5px;
+    font-family: "Major Mono Display";
+    font-size: 40px;
+    left: 5%;
+    cursor: pointer;
+    position: absolute;
+    background-color: rgba(255,255,255,0.5);
+    top: 33%;
+}
+#img-right {
+    border: none;
+    z-index: 1;
+    border-radius: 5px;
+    font-family: "Major Mono Display";
+    font-size: 40px;
+    right: 5%;
+    cursor: pointer;
+    position: absolute;
+    background-color: rgba(255,255,255,0.5);
+    top: 33%;
+}
+#img-left:hover,#img-right:hover {
+    color: #FF4C30;
 }

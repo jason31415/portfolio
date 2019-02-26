@@ -25,6 +25,7 @@
 @media only screen and (max-width: 1150px) {
     .crop {
         width: 100%;
+        min-width: 250px;
         height: 150px;
         filter: grayscale() opacity(.4) blur(.5px);
     }
@@ -148,7 +149,8 @@
 
 .pep {
     grid-area: pep;
-    background-size: 150%;
+    background-size: 13
+        0%;
     background-position: 50% 35%;
     transition: background-position 1s;
 }
@@ -172,7 +174,7 @@
 .wobl {
     grid-area: wobl;
     background-size: 100%;
-    background-position: 0 17%;
+    background-position: 0% 17%;
     transition: background-position 1.5s;
 }
 
@@ -212,11 +214,13 @@
 
 .xondas {
     grid-area: xondas;
-    background-size: 120%;
-    background-position: 50% 20%;
+    background-size: 140%;
+    background-position: 50% 0%;
     transition: background-position 1.5s;
 }
-
+.xondas.show:hover {
+    background-position: 50% 80%;
+}
 .date {
     transform: rotateZ(90deg);
     display: block;

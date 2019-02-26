@@ -163,6 +163,9 @@ body {
     font-weight: lighter;
 }
 
+#opt-about:hover {
+    color: #FF4C30;
+}
 .menu .active {
     color: #FF4C30;
 }

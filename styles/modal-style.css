@@ -140,9 +140,9 @@
     left: 7%;
     cursor: pointer;
     position: absolute;
-    background-color: rgba(255,255,255,0);
-    top: 60%;
-    color: #FF4C30;
+    background-color: rgba(0,0,0,0.02);
+    top: 52vh;
+    color: white;
 }
 #img-right {
     padding-bottom: 4px;
@@ -157,9 +157,9 @@
     right: 7%;
     cursor: pointer;
     position: absolute;
-    background-color: rgba(255,255,255,0);
-    top: 60%;
-    color: #FF4C30;
+    background-color: rgba(0,0,0,0.02);
+    top: 52vh;
+    color: white;
 }
 #img-left:hover,#img-right:hover {
     border-color: #FF4C30;

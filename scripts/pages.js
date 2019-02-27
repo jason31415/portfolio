@@ -11,6 +11,7 @@ function open_modal(c) {
      modal = document.getElementById(c);
     images = modal.getElementsByClassName("modal-crop");
     i = 0;
+    widthChange(w);
     images[0].style.display = "inline-block";
     modal.style.display = "block";
     close = modal.getElementsByClassName("close")[0];
@@ -23,11 +24,7 @@ function open_modal(c) {
 // When the user clicks on <span> (x), close the modal
 function close_modal(c) {
     modal = document.getElementById(c);
-    if (!w.matches) {
-        for (var k = 1; k < images.length; ++k) {
-            images[k].style.display = "none";
-        }
-    }
+    widthChange(w);
     images[0].style.display = "inline-block";
     modal.style.display = "none";
     body.style.overflow = "auto";

@@ -6,6 +6,30 @@
         filter: drop-shadow(0 0 0px black);
         border-radius: 5px;
     }
+    .modal-images {
+        grid-gap: 10px;
+    display: grid;
+        grid-template-columns: 2fr 1/2fr 1/2fr;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "one one two"
+        "one one three";
+    }
+    #img-1 {
+        grid-area: one;
+        display: block;
+    }
+    #img-2 {
+        grid-area: two;
+        display: block;
+    }
+    #img-3 {
+        grid-area: three;
+        display: block;
+    }
+    #img-left,#img-right {
+        display: none;
+    }
 }
 @media only screen and (max-width: 680px) {
     .modal-container {
@@ -13,6 +37,28 @@
         overflow: scroll;
         margin: 0;
         border-radius: 0px;
+    }
+    .modal-images {
+        height: 30vh;
+        display: block;
+    }
+    #img-1 {
+        height: 100%;
+        width: 100%;
+        display: inline-block;
+    }
+    #img-2 {
+        height: 100%;
+        width: 100%;
+        display: none;
+    }
+    #img-3 {
+        height: 100%;
+        width: 100%;
+        display: none;
+    }
+    #img-left,#img-right {
+        display: inline-block;
     }
 }
 
@@ -24,22 +70,23 @@
     overflow: auto; /* Enable scroll if needed */
     background-color: white;
 }
-
-.modal-content {
+.modal-images {
+    height: 40vh;
+    padding-left: 5%;
+    padding-right: 5%;
 }
 
 .modal-crop {
-    width: 90%;
     border-radius: 5px;
-    height: 50vh;
-    margin-left: 5%;
-    display: none;
+    min-height: 100px;
+    display: block;
     background-position: 50% 30%;
     background-size: cover;
     background-repeat: no-repeat;
     overflow: hidden;
     object-fit: cover;
 }
+
 /* The Close Button */
 .modal-content .close {
     position: absolute;
@@ -104,11 +151,7 @@
 .modal-content h1 {
     font-family: "Source Code Pro";
 }
-.modal-image {
-    max-width: 30%;
-    min-width: 300px;
-    display: inline-block;
-}
+
 .image-row {
     width: 100%;
 }
@@ -141,7 +184,7 @@
     cursor: pointer;
     position: absolute;
     background-color: rgba(0,0,0,0.02);
-    top: 52vh;
+    top: 40vh;
     color: white;
 }
 #img-right {
@@ -158,7 +201,7 @@
     cursor: pointer;
     position: absolute;
     background-color: rgba(0,0,0,0.02);
-    top: 52vh;
+    top: 40vh;
     color: white;
 }
 #img-left:hover,#img-right:hover {

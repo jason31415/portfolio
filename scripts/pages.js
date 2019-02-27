@@ -23,8 +23,10 @@ function open_modal(c) {
 // When the user clicks on <span> (x), close the modal
 function close_modal(c) {
     modal = document.getElementById(c);
-    for (var k = 1; k < images.length; ++k) {
-        images[k].style.display = "none";
+    if (!w.matches) {
+        for (var k = 1; k < images.length; ++k) {
+            images[k].style.display = "none";
+        }
     }
     images[0].style.display = "inline-block";
     modal.style.display = "none";
@@ -53,6 +55,7 @@ function img_right() {
     }
     images[i].style.display = "inline-block";
 }
+
 function img_left() {
     images[i].style.display = "none";
     console.log(images.length);
@@ -62,4 +65,25 @@ function img_left() {
         --i
     }
     images[i].style.display = "inline-block";
+}
+const w = window.matchMedia("(min-width: 681px)");
+if (matchMedia) {
+    w.addListener(widthChange);
+    widthChange(w);
+}
+
+
+function widthChange(w) {
+    
+    if (w.matches) {
+        for (var k = 0; k < images.length; ++k) {
+            images[k].style.display = "inline-block";
+        }
+    }
+    else {
+        //console.log(w);
+        for (var k = 1; k < images.length; ++k) {
+            images[k].style.display = "none";
+        }
+    }
 }

@@ -245,7 +245,7 @@
     font-weight: bold;
     position: absolute;
     bottom: 10%;
-    right: -80%;
+    right: -90%;
     transition: all 1s;
 }
 .show.crop:hover .img-title {

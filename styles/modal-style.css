@@ -186,10 +186,14 @@
     font-weight: normal;
     font-size: 15px;
 }
+
+#components {
+    font-family: "Source Code Pro";
+}
+
 .image-row {
     width: 100%;
 }
-
 #modal-filter {
     display: none;
     position: fixed;

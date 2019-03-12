@@ -175,21 +175,32 @@ body {
     display: none;
 }
 
+.about-page h2 {
+    font-weight: lighter;
+    font-size: 15px;
+}
+
 #about-skills {
+    font-weight: lighter;
     margin-left: 10%;
     list-style:disc;
     color: #FF4C30;
+    font-size: 15px;
 }
+
 #headshot {
     width: 250px;
     float: left;
     margin-top: 20px;
     margin-right: 50px;
 }
+
 #about-intro {
     display: inline-block;
-    font-size: 20px;
+    font-size: 15px;
 }
+
+
 .btn {
     border-bottom: dashed 0px #FF4C30;
     z-index: 1;

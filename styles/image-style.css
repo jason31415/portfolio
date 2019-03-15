@@ -14,7 +14,8 @@
         grid-template-areas: 
         "cat plant plant mood"
         "cat xondas xondas mood"
-        "cat pep wobl wobl";
+        "cat pep wobl wobl"
+        "cat blank cur blank1";
     }
     .categories li {
         float: right;
@@ -38,7 +39,8 @@
         grid-template-areas: 
         "cat plant wobl"
         "cat mood xondas"
-        "cat pep blank";
+        "cat pep cur";
+        
     }
     .categories li {
         float: right;
@@ -60,7 +62,7 @@
         "cat cat"
         "plant wobl"
         "mood xondas"
-        "pep blank";
+        "pep cur";
     }
     .categories li {
         float: left;
@@ -84,10 +86,11 @@
         grid-template-areas: 
         "plant"
         "pep"
-            "xondas"
-            "wobl"
-            "rmp"
-            "mood";
+        "xondas"
+         "wobl"
+        "rmp"
+        "mood"
+        "cur";
     }
     .categories li {
         display: none;
@@ -192,6 +195,11 @@
     grid-area: xondas;
     background-size: 120%;
     background-position: 50% 5%;
+}
+.cur {
+    grid-area: cur;
+    background-size: 120%;
+    background-position: 50% 50%;
 }
 
 .date {

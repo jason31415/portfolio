@@ -446,11 +446,6 @@
             </div>
             <div class="modal-text">
                 <h1>Brainstorming Functionality</h1>
-                <div class="image-row">
-                    <img class ="modal-image-narrow" src="images/xondas/comp-5.png">
-                    <img class ="modal-image-narrow" src="images/xondas/render1-1.png">
-                    <img class ="modal-image-narrow" src="images/xondas/render1-3.png">
-                </div>
                 <h2>After much debate and discussion, we came to the conclusion that, with their goal being to start a crowdfunding campaign, we'd want a slick product that would capture the target market of young tech-loving adults. I pitched many ideas that would utilize wireless power, including a living boardgame, floating lavalamp, and electronic building blocks. For the sake of simplicity, though, we decided to stick with a floating lamp. Although the idea itself wasn't entirely new, Xondas' technology allowed 10 watts to used to light an entire room, whereas in competitors only a dim LED could be powered. Specs like this, though, are hard to sell, and ultimately the product would have to stand out with its design.</h2>
                 <h1>Form Exploration</h1>
                 <div class="image-row">
@@ -543,6 +538,42 @@
             </div>
         </div>
     </div>
+    <div id="cur-modal" class="modal-container">
+        <div class="modal-content">
+            <div class="title"> <div onclick="close_modal('cur-modal')"class="close">&times;</div> curious</div>
+            <div class="carousel">
+                <button id="img-left" onclick="img_left()"><</button>
+                <button id="img-right" onclick="img_right()">></button>
+                <div class="modal-images">
+                    <div id="img-1"class="modal-crop" style="background-image: url(/images/curious/pool.gif)"></div>
+                    <div id="img-2"class="modal-crop" style="background-image: url(/images/curious/pool-sketch-1.jpg)"></div>
+                    <div id="img-3"class="modal-crop" style="background-image: url(/images/curious/pool-sketch-2.jpg)"></div>
+                </div>
+            </div>
+            <div class="carousel">
+                <button id="img-left" onclick="img_left()"><</button>
+                <button id="img-right" onclick="img_right()">></button>
+                <div class="modal-images">
+                    <div id="img-1"class="modal-crop" style="background-image: url(/images/curious/calc-1.png)"></div>
+                    <div id="img-2"class="modal-crop" style="background-image: url(/images/curious/calc-2.png)"></div>
+                    <div id="img-3"class="modal-crop" style="background-image: url(/images/curious/calc-3.png)"></div>
+                </div>
+            </div>
+                <div class="carousel">
+                <button id="img-left" onclick="img_left()"><</button>
+                <button id="img-right" onclick="img_right()">></button>
+                <div class="modal-images">
+                    <div id="img-1"class="modal-crop" style="background-image: url(/images/curious/watch-1.jpg)"></div>
+                    <div id="img-2"class="modal-crop" style="background-image: url(/images/curious/watch-3.jpg)"></div>
+                    <div id="img-3"class="modal-crop" style="background-image: url(/images/curious/watch-render.png)"></div>
+                </div>
+            </div>
+            <div class="intro">
+                <h1 id="quote">A collection of curious projects that are still in the making, or abandoned altogether.</h1>
+            </div>
+        </div>
+    </div>
+    
     <div id="modal-filter"></div>
     <div class="grid">
         
@@ -597,6 +628,8 @@
             <div class="crop rmp electric" style="background-image: url(/images/rmp/header.PNG)"><div class="date">sep~dec 2018</div><div class="img-title">plantbot</div></div>
             
             <div class="crop calc id electric" style="background-image: url(/images/calc/header.png)"><div class="date">2018</div><div class="img-title">calc</div></div>
+            
+            <div class="crop cur graphic" style="background-image: url(/images/curious/pool.gif)" onclick="open_modal('cur-modal')"><div class="date">2017~present </div><div class="img-title">curious</div></div>
             
             <div class="crop xondas id electric" style="background-image: url(/images/xondas/header.png)" onclick="open_modal('xondas-modal')"><div class="date">mar~dec 2018</div><div class="img-title">Xondas</div></div>
         </div>

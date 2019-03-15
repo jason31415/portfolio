@@ -203,6 +203,7 @@
     font-size: 15px;
     font-weight: bold;
     position: absolute;
+    transition: opacity 0;
     left: -50px;
     top: 45%;
 }
@@ -217,6 +218,7 @@
     font-weight: bold;
     position: absolute;
     bottom: 10%;
+    transition: opacity 0;
     right: 2%;
     opacity: 0;
 }

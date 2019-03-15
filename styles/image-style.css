@@ -139,60 +139,37 @@
 .mood {
     grid-area: mood;
     background-position: 50% 30%;
-    transition: background-position 1.5s;
-}
-
-.mood.show:hover {
-    background-position: 50% 90%;
 }
 
 .pep {
     grid-area: pep;
-    background-size: 13
-        0%;
+    background-size: 130%;
     background-position: 50% 35%;
-    transition: background-position 1s;
 }
-
-.pep.show:hover {
-    background-position: 50% 100%;
-}
-
 
 .plant {
     grid-area: plant;
     background-size: 130%;
     background-position: 20% 33%;
-    transition: background-position 1.5s;
-}
-
-.plant.show:hover {
-    background-position: 20% 77%;
 }
 
 .wobl {
     grid-area: wobl;
     background-size: 100%;
     background-position: 0% 17%;
-    transition: background-position 1.5s;
 }
 
-.wobl.show:hover {
-    background-position: 20% 77%;
-}
 
 .bliss {
     display: none;
     grid-area: bliss;
     background-size: 150%;
-    transition: background-position 1.5s;
 }
 .dmix {
     display: none;
     grid-area: dmix;
     background-size: 100%;
     background-position: 0% 20%;
-    transition: background-position 1.5s;
 }
 
 .rmp {
@@ -215,26 +192,21 @@
     grid-area: xondas;
     background-size: 140%;
     background-position: 50% 0%;
-    transition: background-position 1.5s;
 }
-.xondas.show:hover {
-    background-position: 50% 80%;
-}
+
 .date {
     transform: rotateZ(90deg);
     display: block;
-    opacity: 1;
+    opacity: 0;
     color: #FF4C30;
     font-family: "Major Mono Display";
     font-size: 15px;
-    transition: all 1s;
     font-weight: bold;
     position: absolute;
     left: -50px;
-    top: -100px;
+    top: 45%;
 }
 .show.crop:hover .date {
-     top: 45%;
     opacity: 1;
 }
 .img-title {
@@ -245,9 +217,9 @@
     font-weight: bold;
     position: absolute;
     bottom: 10%;
-    right: -90%;
-    transition: all 1s;
+    right: 2%;
+    opacity: 0;
 }
 .show.crop:hover .img-title {
-    right: 2%;
+    opacity: 1;
 }

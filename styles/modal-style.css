@@ -169,14 +169,14 @@
     margin-bottom: 10px;
 }
 .col-title {
-    font-size: 25px;
+    font-size: calc(1vw + 1em);
     text-decoration: underline;
 }
 .col ul {
     padding-left: 15px;
 }
 .col li{
-    font-size: 15px;
+    font-size: calc(1vw + .2em);
     list-style: disc;
 }
 

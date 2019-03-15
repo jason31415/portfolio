@@ -31,14 +31,14 @@
         display: none;
     }
     .modal-image-wide {
-        max-width: 100%;
+        width: 100%;
     }
     .modal-image-narrow {
-        max-width: 33%;
+        width: 33%;
     }
     .image-row {
         width: 100%;
-        align-content: center;
+        text-align: center;
         white-space: nowrap;
     }
 }
@@ -91,7 +91,7 @@
     background-color: white;
 }
 .modal-images {
-    height: 50vh;
+    height: 40vh;
     padding-left: 5%;
     padding-right: 5%;
 }
@@ -107,14 +107,18 @@
     object-fit: cover;
 }
 #quote {
+    text-align: center;
+    color: black;
+}
+.intro {
+    font-family: "Source Code Pro";
+    margin-top: 2.5%;
     margin-left: 5%;
     margin-right: 5%;
-    text-align: center;
-    font-weight: bold;
-    color: #FF4C30;
-    padding: 15px;
+    padding: 25px;
     border-radius: 5px;
-    border: dashed 2px #FF4C30;
+    border: dashed 1px #FF4C30;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
 }
 .modal-content .title {
     box-shadow: 0 0px 0px rgba(0, 0, 0, 0.2);
@@ -126,7 +130,7 @@
     padding-bottom: 5vh;
     position: sticky;
     top: 0;
-    font-family: "Major Mono Display";
+    font-family: "Source Code Pro";
     font-size: 25px;
     font-weight: bold;
 }
@@ -150,13 +154,14 @@
 .modal-row {
     display: inline-block;
     width: 100%;
+    padding-left: 5%;
 }
 
 
 .modal-content .col {
     display: inline-block;
     float: left;
-    color: #FF4C30;
+    color: black;
     font-family: "Source Code Pro";
     width: 33%;
     margin-bottom: 10px;
@@ -166,7 +171,7 @@
     text-decoration: underline;
 }
 .col ul {
-    padding-left: 20px;
+    padding-left: 15px;
 }
 .col li{
     font-size: 15px;
@@ -174,14 +179,14 @@
 }
 
 
-.modal-content .description {
+.description {
+    border-top: solid black 1px;
+    padding-top: 15px;
+    padding-left: 5%;
+    padding-right: 5%;
     font-family: "Source Code Pro";
-    font-weight: lighter;
-    font-size: 25px;
-    display: lock;
-    justify-content: center;
-    align-items: center;
-    padding-bottom: 5%;
+    font-size: 20px;
+    color: black;
 }
 
 .modal-text {

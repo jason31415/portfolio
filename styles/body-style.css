@@ -189,7 +189,7 @@ body {
 }
 
 #skills-title {
-    font-size: calc(1vw + .5em);
+    font-size: calc(2vw + 1em);
     margin-bottom: 0;
     color: #FF4C30;
 }
@@ -205,7 +205,7 @@ body {
 #about-intro {
     display: inline-block;
     font-size: calc(1vw + .5em);
-    font-weight: lighter;
+    font-weight: bolder;
 }
 
 
@@ -227,7 +227,6 @@ body {
 
 .btn.active {
     border-bottom: dashed 1px #FF4C30;
-    font-weight: bold;
     color: #FF4C30;
 }
 .btn:hover {

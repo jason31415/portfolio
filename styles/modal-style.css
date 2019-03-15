@@ -97,6 +97,7 @@
 }
 
 .modal-crop {
+    border: dashed 0px #FF4C30;
     border-radius: 5px;
     min-height: 100px;
     display: block;
@@ -105,6 +106,7 @@
     background-repeat: no-repeat;
     overflow: hidden;
     object-fit: cover;
+    box-shadow: 0 1px 5px rgba(0,0,0,0.25);
 }
 #quote {
     text-align: center;
@@ -130,7 +132,7 @@
     padding-bottom: 5vh;
     position: sticky;
     top: 0;
-    font-family: "Source Code Pro";
+    font-family: "Major Mono Display";
     font-size: 25px;
     font-weight: bold;
 }

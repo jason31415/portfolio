@@ -2,7 +2,7 @@
 @media only screen and (min-width: 680px) {
     .modal-container {
         max-height: 90vh;
-        margin: 2.5% 10% 0% 10%;
+        margin: 2.5% 7.5% 0% 7.5%;
         filter: drop-shadow(0 0 0px black);
         border-radius: 5px;
     }
@@ -89,7 +89,6 @@
     z-index: 10; /* Sit on top */      
     overflow: auto; /* Enable scroll if needed */
     background-color: white;
-    padding-bottom: 2.5%;
 }
 .modal-images {
     height: 40vh;
@@ -118,6 +117,7 @@
     font-family: "Source Code Pro";
     margin-left: 5%;
     margin-right: 5%;
+    margin-bottom: 2.5%;
     padding: 25px;
     border-radius: 5px;
     border: dashed 1px #FF4C30;

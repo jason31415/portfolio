@@ -2,7 +2,7 @@
 @media only screen and (min-width: 1150px) {
     .crop {
         min-width: 200px;
-        min-height: 200px;
+        min-height: 175px;
         filter: grayscale() opacity(.4) blur(.5px);
     }
     .images {
@@ -106,7 +106,7 @@
 .images {
     display: grid;
     grid-template-rows: auto;
-    grid-gap: 20px;
+    grid-gap: 15px;
 }
 .categories {
     grid-area: cat;

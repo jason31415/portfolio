@@ -28,6 +28,9 @@
     #right-arrow {
         display: inline-block;
     }
+    .btn {
+        white-space: pre-wrap;
+    }
 }
 @media only screen and (max-width: 1150px) {
     .grid {
@@ -60,6 +63,9 @@
     #right-arrow {
         display: inline-block;
     }
+    .btn {
+        white-space: nowrap;
+    }
 }
 
 @media only screen and (max-width: 680px) {
@@ -84,6 +90,7 @@
     #right-arrow {
         display: none;
     }
+    
 }
 .grid {
     margin-bottom: 100px;

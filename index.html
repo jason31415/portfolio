@@ -573,7 +573,23 @@
             </div>
         </div>
     </div>
-    
+    <div id="mir-modal" class="modal-container">
+        <div class="modal-content">
+            <div class="title"> <div onclick="close_modal('mir-modal')"class="close">&times;</div> metaphorical mirror</div>
+            <div class="carousel">
+                <button id="img-left" onclick="img_left()"><</button>
+                <button id="img-right" onclick="img_right()">></button>
+                <div class="modal-images">
+                    <div id="img-1"class="modal-crop" style="background-image: url(/images/mirror/mirror-1.png)"></div>
+                    <div id="img-2"class="modal-crop" style="background-image: url(/images/mirror/mirror_sketch.jpg)"></div>
+                    <div id="img-3"class="modal-crop" style="background-image: url(/images/mirror/mirror-2.png)"></div>
+                </div>
+            </div>
+            <div class="intro">
+                <h1 id="quote">A wallmounted device that would allow users to track and log their emotions, productivity, and other as- pects of their life. A metaphorical mirror providing users the means to reflect on their lives, and hopefully make meaningful adjustments.</h1>
+            </div>
+        </div>
+    </div>
     <div id="modal-filter"></div>
     <div class="grid">
         
@@ -605,19 +621,19 @@
         <div id="menu-images"class="images">
             <ul class="categories">
                 <div id="buttons">
-                <li><button class="btn active" onclick="filterSelection('all')">all</button></li>
-                <li><button class="btn" onclick="filterSelection('id')">product design</button></li>
-                <li><button class="btn" onclick="filterSelection('graphic')">graphic</button></li>
-                <li><button class="btn" onclick="filterSelection('elec')">electronic</button></li>
+                    <li><button class="btn active" onclick="filterSelection('all')">all</button></li>
+                    <li><button class="btn" onclick="filterSelection('elec')">electronic</button></li>
+                    <li><button class="btn" onclick="filterSelection('craft')">craft</button></li>
+                    <li><button class="btn" onclick="filterSelection('ongo')">ongoing</button></li>
                 </div>
             </ul>
             
             <div class="crop plant id elec" style="background-image: url(/images/plantbot/header.png)" onclick="open_modal('plant-modal')"><div class="date">nov~dec 2017</div><div class="img-title">PlantBot</div>
             </div>
 
-            <div class="crop pep id" style="background-image: url(/images/pep/header.jpg)" onclick="open_modal('pep-modal')"><div class="date">mar~apr 2018</div><div class="img-title">Salt&Pep</div></div>
+            <div class="crop pep craft id" style="background-image: url(/images/pep/header.jpg)" onclick="open_modal('pep-modal')"><div class="date">mar~apr 2018</div><div class="img-title">Salt&Pep</div></div>
 
-            <div class="crop mood id pagebtn" style="background-image: url(/images/mood/header.jpg)" onclick="open_modal('mood-modal')"><div class="date">nov~dec 2017</div><div class="img-title">MoodBoard</div></div>
+            <div class="crop mood id craft pagebtn" style="background-image: url(/images/mood/header.jpg)" onclick="open_modal('mood-modal')"><div class="date">nov~dec 2017</div><div class="img-title">MoodBoard</div></div>
             
             <div class="crop wobl id elec" style="background-image: url(/images/wobl/hard/comp-1.jpg)" onclick="open_modal('wobl-modal')"><div class="date">jan~mar 2018</div><div class="img-title">Wobl Bobl</div></div>
             
@@ -629,9 +645,11 @@
             
             <div class="crop calc id electric" style="background-image: url(/images/calc/header.png)"><div class="date">2018</div><div class="img-title">calc</div></div>
             
-            <div class="crop cur graphic" style="background-image: url(/images/curious/pool.gif)" onclick="open_modal('cur-modal')"><div class="date">2017~present </div><div class="img-title">curious</div></div>
+            <div class="crop cur ongo id" style="background-image: url(/images/curious/pool.gif)" onclick="open_modal('cur-modal')"><div class="date">2017~present </div><div class="img-title">curious</div></div>
             
-            <div class="crop xondas id electric" style="background-image: url(/images/xondas/header.png)" onclick="open_modal('xondas-modal')"><div class="date">mar~dec 2018</div><div class="img-title">Xondas</div></div>
+            <div class="crop xondas ongo id electric" style="background-image: url(/images/xondas/header.png)" onclick="open_modal('xondas-modal')"><div class="date">mar~dec 2018</div><div class="img-title">Xondas</div></div>
+            
+            <div class="crop mir ongo id elect" style="background-image: url(/images/mirror/mirror-1.png)" onclick="open_modal('mir-modal')"><div class="date">jan~pres 2019 </div><div class="img-title">Mirror</div></div>
         </div>
         <div id="particles-js">
             <script type=text/javascript src="scripts/particles.js"></script>

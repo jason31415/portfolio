@@ -538,9 +538,11 @@
             </div>
         </div>
     </div>
-    <div id="cur-modal" class="modal-container">
+    <div id="other-modal" class="modal-container">
         <div class="modal-content">
-            <div class="title"> <div onclick="close_modal('cur-modal')"class="close">&times;</div> curious</div>
+            
+            <div class="title"> <div onclick="close_modal('other-modal')"class="close">&times;</div> curious</div>
+            <h2 style="margin-left: 5%">Injection mold figurine</h2>
             <div class="carousel">
                 <button id="img-left" onclick="img_left()"><</button>
                 <button id="img-right" onclick="img_right()">></button>
@@ -550,6 +552,7 @@
                     <div id="img-3"class="modal-crop" style="background-image: url(/images/curious/pool-sketch-2.jpg)"></div>
                 </div>
             </div>
+            <h2 style="margin-left: 5%">"Will I make it to class?" Calculator</h2>
             <div class="carousel">
                 <button id="img-left" onclick="img_left()"><</button>
                 <button id="img-right" onclick="img_right()">></button>
@@ -559,7 +562,8 @@
                     <div id="img-3"class="modal-crop" style="background-image: url(/images/curious/calc-3.png)"></div>
                 </div>
             </div>
-                <div class="carousel">
+            <h2 style="margin-left: 5%">Dumb Watch</h2>
+            <div class="carousel">
                 <button id="img-left" onclick="img_left()"><</button>
                 <button id="img-right" onclick="img_right()">></button>
                 <div class="modal-images">
@@ -590,7 +594,23 @@
             </div>
         </div>
     </div>
-
+    <div id="box-modal" class="modal-container">
+        <div class="modal-content">
+            <div class="title"> <div onclick="close_modal('box-modal')"class="close">&times;</div> phone lock box</div>
+            <div class="carousel">
+                <button id="img-left" onclick="img_left()"><</button>
+                <button id="img-right" onclick="img_right()">></button>
+                <div class="modal-images">
+                    <div id="img-1"class="modal-crop" style="background-image: url(/images/box/print-draft2-1-min.png)"></div>
+                    <div id="img-2"class="modal-crop" style="background-image: url(/images/box/print-draft2-2-min.png)"></div>
+                    <div id="img-3"class="modal-crop" style="background-image: url(/images/box/color-lineup-3-min.png)"></div>
+                </div>
+            </div>
+            <div class="intro">
+                <h1 id="quote">A box that helps children develop good sleep habits by restricting media use before bedtime.</h1>
+            </div>
+        </div>
+    </div>
     <div id="modal-filter"></div>
     <div class="grid">
         
@@ -615,7 +635,12 @@
                 <li>Graphic Design</li>
                 <li>UX/UI</li>
             </ul>
-            <h1 id="skills-title">Hobbies: Listening to music, dancing, and religiously watching films.</h1>
+            <h1 id="skills-title">Interests & Hobbies: music, dance, basketball, and films.</h1>
+            <h1> Favorite music artist: Joey Badass</h1>
+            <h1> Favorite choreographer: Kyle Hanagami</h1>
+            <h1> Favorite sports team: Portland Trail Blazers</h1>
+            <h1> Favorite film/director: Guillermo Del Toro's <i>Pan's Labyrinth</i></h1>
+            
 
         </div>
         
@@ -625,7 +650,7 @@
                     <li><button class="btn active" onclick="filterSelection('all')">all</button></li>
                     <li><button class="btn" onclick="filterSelection('elec')">electronic</button></li>
                     <li><button class="btn" onclick="filterSelection('craft')">craft</button></li>
-                    <li><button class="btn" onclick="filterSelection('ongo')">ongoing</button></li>
+                    <li><button class="btn" onclick="filterSelection('cur')">current</button></li>
                 </div>
             </ul>
             
@@ -641,13 +666,13 @@
   
             
             
-            <div class="crop cur ongo id" style="background-image: url(/images/curious/pool.gif)" onclick="open_modal('cur-modal')"><div class="date">2017~present </div><div class="img-title">curious</div></div>
+            <div class="crop other" style="background-image: url(/images/curious/pool.gif)" onclick="open_modal('other-modal')"><div class="date">2017~present </div><div class="img-title">curious</div></div>
             
-            <div class="crop xondas ongo id electric" style="background-image: url(/images/xondas/header.png)" onclick="open_modal('xondas-modal')"><div class="date">mar~dec 2018</div><div class="img-title">Xondas</div></div>
+            <div class="crop xondas cur id elec" style="background-image: url(/images/xondas/header.png)" onclick="open_modal('xondas-modal')"><div class="date">mar~dec 2018</div><div class="img-title">Xondas</div></div>
             
-            <div class="crop mir ongo id elect" style="background-image: url(/images/mirror/mirror-1.png)" onclick="open_modal('mir-modal')"><div class="date">jan~pres 2019 </div><div class="img-title">Mirror</div></div>
+            <div class="crop mir cur id elec" style="background-image: url(/images/mirror/mirror-1.png)" onclick="open_modal('mir-modal')"><div class="date">jan~pres 2019 </div><div class="img-title">Mirror</div></div>
             
-    
+            <div class="crop box cur id elec" style="background-image: url(/images/box/print-draft2-1-min.png)" onclick="open_modal('box-modal')"><div class="date">jan~pres 2019 </div><div class="img-title">Phone Box</div></div>
             
         </div>
         <div id="particles-js">

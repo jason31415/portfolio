@@ -12,10 +12,10 @@
         grid-row: 2/10;
         grid-template-columns: .5fr 1fr 1fr 1fr;
         grid-template-areas: 
-        "cat plant plant mood"
-        "cat xondas xondas mood"
-        "cat pep wobl wobl"
-        "cat mir cur blank1";
+        "cat box box mood"
+        "cat wobl wobl mood"
+        "cat plant xondas xondas"
+        "cat pep cur mir";
     }
     .categories li {
         text-align: right;
@@ -37,10 +37,10 @@
         grid-row: 2/15;
         grid-template-columns: .5fr 1fr 1fr .25fr;
         grid-template-areas: 
-        "cat plant wobl"
+        "cat box wobl"
         "cat mood xondas"
-        "cat pep cur"
-        "cat mir blank";
+        "cat plant pep"
+        "cat mir cur";
         
     }
     .categories li {
@@ -62,10 +62,10 @@
         grid-template-columns: 1fr 1fr;
         grid-template-areas: 
         "cat cat"
-        "plant wobl"
+        "box wobl"
         "mood xondas"
-        "pep cur"
-        "mir blank";
+        "plant pep"
+        "mir cur";
     }
     .categories li {
         float: left;
@@ -87,11 +87,12 @@
         grid-row: 2/10;
         grid-template-columns: 100%;
         grid-template-areas: 
-        "plant"
-        "pep"
+        "box"
         "xondas"
+        "plant"
          "wobl"
         "mir"
+        "pep"
         "mood"
         "cur";
     }
@@ -199,7 +200,7 @@
     background-size: 120%;
     background-position: 50% 5%;
 }
-.cur {
+.other {
     grid-area: cur;
     background-size: 120%;
     background-position: 50% 50%;
@@ -209,6 +210,12 @@
     grid-area: mir;
     background-size: 130%;
     background-position: 50% 20%;
+}
+
+.box {
+    grid-area: box;
+    background-size: 100%;
+    background-position: 50% 50%;
 }
 
 .date {

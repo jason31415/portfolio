@@ -211,7 +211,10 @@ body {
     font-size: calc(1vw + .5em);
     font-weight: bolder;
 }
-
+.favorites {
+    font-size: calc(1vw + 1em);
+    margin-bottom: 0;
+}
 
 .btn {
     border-bottom: dashed 0px #FF4C30;

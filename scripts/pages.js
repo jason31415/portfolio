@@ -12,23 +12,31 @@ function open_modal(c) {
     images = modal.getElementsByClassName("modal-crop");
     i = 0;
     widthChange(w);
-    images[0].style.display = "inline-block";
-    modal.style.display = "block";
+    images[0].style.opacity = "block";
+    modal.classList.add("fade");
+    modal.style.opacity = "1";
+    modal.style.zIndex = "2";
     close = modal.getElementsByClassName("close")[0];
     //check to see if also .show?
     //modal.style.display = "block";
     body.style.overflow = "hidden";
-    filter.style.display = "block";
+    filter.classList.add("fade");
+    filter.style.opacity = ".2";
+    filter.style.zIndex = "1";
 }
 
 // When the user clicks on <span> (x), close the modal
 function close_modal(c) {
     modal = document.getElementById(c);
     widthChange(w);
-    images[0].style.display = "inline-block";
-    modal.style.display = "none";
+    images[0].style.display = "none";
+    modal.classList.remove("fade");
+    modal.style.zIndex = "-1";
+    modal.style.opacity = "0";
     body.style.overflow = "auto";
-    filter.style.display = "none";
+    filter.classList.remove("fade");
+    filter.style.opacity = "0";
+    filter.style.zIndex = "-1";
 }
 
 var body = document.getElementById("body");

@@ -2,6 +2,7 @@
 // Get the <span> element that closes the modal
 var close;
 var modal;
+var all_modals = document.getElementsByClassName("modal-container");
 var images;
 var i = 0
 var filter = document.getElementById("modal-filter");
@@ -12,31 +13,45 @@ function open_modal(c) {
     images = modal.getElementsByClassName("modal-crop");
     i = 0;
     widthChange(w);
-    images[0].style.display = "block";
+    
+    if (w.matches) {
+        modal.style.transform = "scale(1)";
+    }
+    else {
+        modal.style.transform = "translateX(0)";
+    }
+    modal.style.zIndex = "3";   
     modal.classList.add("fade");
+    
     modal.style.opacity = "1";
-    modal.style.zIndex = "2";
-    close = modal.getElementsByClassName("close")[0];
-    //check to see if also .show?
-    //modal.style.display = "block";
-    body.style.overflow = "hidden";
     filter.classList.add("fade");
     filter.style.opacity = ".2";
-    filter.style.zIndex = "1";
+    filter.style.zIndex = "2";
+    
+    images[0].style.display = "block";
+    close = modal.getElementsByClassName("close")[0];
+    body.style.overflow = "hidden";   
 }
 
 // When the user clicks on <span> (x), close the modal
 function close_modal(c) {
     modal = document.getElementById(c);
     widthChange(w);
-    images[0].style.display = "none";
-    modal.classList.remove("fade");
     modal.style.zIndex = "-1";
+    modal.classList.remove("fade");
+    if (w.matches) {
+        modal.style.transform = "scale(1.2)";
+    }
+    else {
+        modal.style.transform = "translateX(-100vw)";
+    }
     modal.style.opacity = "0";
-    body.style.overflow = "auto";
+    filter.style.zIndex = "-1";
     filter.classList.remove("fade");
     filter.style.opacity = "0";
-    filter.style.zIndex = "-1";
+    
+    images[0].style.display = "none";
+    body.style.overflow = "auto";   
 }
 
 var body = document.getElementById("body");
@@ -79,14 +94,29 @@ if (matchMedia) {
 
 
 function widthChange(w) {
-    
+    console.log("yowassup");
     if (w.matches) {
+        for (var k = 0; k < all_modals.length; ++k) {
+            console.log("heyyy");
+            all_modals[k].style.transform = "translateX(0)";
+            
+            if (all_modals[k] != modal) {
+                all_modals[k].style.transform = "scale(1.2)";
+            }
+        }
         for (var k = 0; k < images.length; ++k) {
             images[k].style.display = "inline-block";
         }
     }
     else {
         //console.log(w);
+        for (var k = 0; k < all_modals.length; ++k) {
+            console.log("eema");
+            all_modals[k].style.transform = "scale(1)";
+            if (all_modals[k] != modal) {
+                all_modals[k].style.transform = "translateX(-100vw)";
+            }
+        }
         for (var k = 1; k < images.length; ++k) {
             images[k].style.display = "none";
         }

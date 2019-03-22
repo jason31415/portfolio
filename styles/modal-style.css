@@ -1,8 +1,8 @@
 
 @media only screen and (min-width: 680px) {
     .modal-container {
-        max-height: 90vh;
-        margin: 2.5% 7.5% 0% 7.5%;
+        max-height: 95vh;
+        margin: 2.5vh 7.5vw 0% 7.5vw;
         filter: drop-shadow(0 0 0px black);
         border-radius: 5px;
     }
@@ -90,6 +90,7 @@
     z-index: -1; /* Sit on top */      
     overflow: auto; /* Enable scroll if needed */
     background-color: white;
+    transform: scale(1.2) translateX(-100vw);
 }
 
 .modal-images {
@@ -232,7 +233,7 @@
 }
 
 .fade {
-    transition: opacity .35s;
+    transition: transform .2s ease-out, opacity .3s ease-out;
     
 }
 #img-left {

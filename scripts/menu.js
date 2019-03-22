@@ -21,8 +21,11 @@ function image_close() {
     about_page.style.display = "grid";
     work.classList.remove("active");
     about.classList.add("active");
+    //close all modals when about
+    /*
     var modal_container = document.getElementsByClassName("modal-container");
     for (var i = 0; i < modal_container.length; ++i) {
-        modal_container[i].style.display = "none";
+        close(modal_container[i]);
     }
+    */
 }

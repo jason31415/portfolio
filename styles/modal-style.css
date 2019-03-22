@@ -90,7 +90,7 @@
     z-index: -1; /* Sit on top */      
     overflow: auto; /* Enable scroll if needed */
     background-color: white;
-    transform: scale(1.2) translateX(-100vw);
+    transform: scale(0.5) translateX(-100vw);
 }
 
 .modal-images {

@@ -12,7 +12,6 @@ function open_modal(c) {
      modal = document.getElementById(c);
     images = modal.getElementsByClassName("modal-crop");
     i = 0;
-    widthChange(w);
     
     if (w.matches) {
         modal.style.transform = "scale(1)";
@@ -36,11 +35,10 @@ function open_modal(c) {
 // When the user clicks on <span> (x), close the modal
 function close_modal(c) {
     modal = document.getElementById(c);
-    widthChange(w);
     modal.style.zIndex = "-1";
     modal.classList.remove("fade");
     if (w.matches) {
-        modal.style.transform = "scale(1.2)";
+        modal.style.transform = "scale(0.75)";
     }
     else {
         modal.style.transform = "translateX(-100vw)";
@@ -101,7 +99,7 @@ function widthChange(w) {
             all_modals[k].style.transform = "translateX(0)";
             
             if (all_modals[k] != modal) {
-                all_modals[k].style.transform = "scale(1.2)";
+                all_modals[k].style.transform = "scale(0.75)";
             }
         }
         for (var k = 0; k < images.length; ++k) {

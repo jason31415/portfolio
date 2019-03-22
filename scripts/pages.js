@@ -12,7 +12,7 @@ function open_modal(c) {
     images = modal.getElementsByClassName("modal-crop");
     i = 0;
     widthChange(w);
-    images[0].style.opacity = "block";
+    images[0].style.display = "block";
     modal.classList.add("fade");
     modal.style.opacity = "1";
     modal.style.zIndex = "2";

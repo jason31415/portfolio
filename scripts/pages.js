@@ -48,7 +48,9 @@ function close_modal(c) {
     filter.classList.remove("fade");
     filter.style.opacity = "0";
     
-    images[0].style.display = "none";
+    for (i = 0; i != images.length; ++i) {
+        images[i].style.display = "none";
+    }
     body.style.overflow = "auto";   
 }
 

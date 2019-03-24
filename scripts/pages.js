@@ -12,7 +12,7 @@ function open_modal(c) {
      modal = document.getElementById(c);
     images = modal.getElementsByClassName("modal-crop");
     i = 0;
-    
+    widthChange(w);
     if (w.matches) {
         modal.style.transform = "scale(1)";
     }
@@ -21,7 +21,7 @@ function open_modal(c) {
     }
     modal.style.zIndex = "3";   
     modal.classList.add("fade");
-    
+
     modal.style.opacity = "1";
     filter.classList.add("fade");
     filter.style.opacity = ".2";
@@ -34,6 +34,7 @@ function open_modal(c) {
 
 // When the user clicks on <span> (x), close the modal
 function close_modal(c) {
+    widthChange(w);
     modal = document.getElementById(c);
     modal.style.zIndex = "-1";
     modal.classList.remove("fade");
@@ -45,12 +46,11 @@ function close_modal(c) {
     }
     modal.style.opacity = "0";
     filter.style.zIndex = "-1";
+    
     filter.classList.remove("fade");
     filter.style.opacity = "0";
     
-    for (i = 0; i != images.length; ++i) {
-        images[i].style.display = "none";
-    }
+    images[0].style.display = "none";
     body.style.overflow = "auto";   
 }
 

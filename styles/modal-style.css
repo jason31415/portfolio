@@ -44,7 +44,7 @@
 }
 @media only screen and (max-width: 680px) {
     .modal-container {
-        max-height: 100vh;
+        height: 100vh;
         overflow: scroll;
         margin: 0;
         border-radius: 0px;
@@ -83,6 +83,7 @@
 }
 
 .modal-container {
+    box-shadow: 0 0 10px rgba(0,0,0,0.05);
     position: fixed;
     overflow-y: auto;
     display: block;
@@ -233,8 +234,7 @@
 }
 
 .fade {
-    transition: transform .2s ease-out, opacity .3s ease-out;
-    
+    transition: transform .2s ease-out, opacity .3s ease-out;   
 }
 #img-left {
     padding-bottom: 4px;

@@ -94,6 +94,10 @@
     transform: scale(0.5) translateX(-100vw);
 }
 
+.fade {
+    transition: transform .2s ease-out, opacity .3s ease-out;   
+}
+
 .modal-images {
     height: 40vh;
     padding-left: 5%;
@@ -233,9 +237,6 @@
     height: 100vh;
 }
 
-.fade {
-    transition: transform .2s ease-out, opacity .3s ease-out;   
-}
 #img-left {
     padding-bottom: 4px;
     height: 50px;

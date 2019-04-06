@@ -9,7 +9,7 @@ var filter = document.getElementById("modal-filter");
 var body = document.getElementById("body");
 // When the user clicks on the button, open the modal 
 function open_modal(c) {
-     modal = document.getElementById(c);
+    modal = document.getElementById(c);
     images = modal.getElementsByClassName("modal-crop");
     i = 0;
     widthChange(w);
@@ -59,10 +59,7 @@ var body = document.getElementById("body");
 filter.onclick = function(event) {
     
 var modals = document.getElementsByClassName("modal-container");
-  for (var i = 0; i < modals.length; ++i) {
-      console.log(modals[i].getAttribute("id"));
-      close_modal(modals[i].getAttribute("id"));
-  }
+    close_modal(modal.getAttribute("id"));
 }
 
 function img_right() {
@@ -94,10 +91,8 @@ if (matchMedia) {
 
 
 function widthChange(w) {
-    console.log("yowassup");
     if (w.matches) {
         for (var k = 0; k < all_modals.length; ++k) {
-            console.log("heyyy");
             all_modals[k].style.transform = "translateX(0)";
             
             if (all_modals[k] != modal) {

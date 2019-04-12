@@ -176,6 +176,7 @@ body {
 
 .about-page {
     font-family: "Source Code Pro";
+    font-weight: normal;
     display: none;
 }
 

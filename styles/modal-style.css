@@ -86,23 +86,34 @@
     box-shadow: 0 0 10px rgba(0,0,0,0.05);
     position: fixed;
     overflow-y: auto;
-    display: block;
+    display: none;
     opacity: 0;
-    z-index: -1; /* Sit on top */      
+    z-index: 3; /* Sit on top */      
     overflow: auto; /* Enable scroll if needed */
     background-color: white;
-    transform: scale(0.5) translateX(-100vw);
 }
 
 .fade {
-    transition: transform .2s ease-out, opacity .3s ease-out;   
+    transition: transform .3s, opacity .3s;   
 }
 
+.modal-show {
+    display: block;
+}
+.modal-shrink {
+    transform: scale(.75);
+}
+.modal-swipe {
+    transform: translateX(-100vw);
+}
+.modal-opacity {
+    opacity: 1;
+}
 .modal-images {
     height: 40vh;
     padding-left: 5%;
     padding-right: 5%;
-    margin-bottom: 2.5%;
+    margin-bottom: 2.5vh;
 }
 
 .modal-crop {
@@ -121,12 +132,20 @@
     text-align: center;
     color: black;
 }
+.tags {
+    color: #FF4C30;
+    font-family: "Source Code Pro Light";
+    font-weight: 100;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 2.5vh;
+}
 .intro {
     font-family: "Source Code Pro";
     margin-left: 5%;
     margin-right: 5%;
-    margin-bottom: 2.5%;
-    padding: 25px;
+    margin-bottom: 2.5vh;
+    padding: 50px;
     border-radius: 5px;
     border: dashed 1px #FF4C30;
     box-shadow: 0 2px 5px rgba(0,0,0,0.2);
@@ -192,7 +211,7 @@
     padding-top: 15px;
     padding-left: 5%;
     padding-right: 5%;
-    font-family: "Source Code Pro";
+    font-family: "Source Code Pro Light";
     font-size: 20px;
     color: black;
 }
@@ -200,18 +219,19 @@
 .modal-text {
     align-content: center;
     display: inline-block;
-    padding-left: 10%;
-    padding-right: 10%;
+    padding-left: 12.5%;
+    padding-right: 12.5%;
     margin-bottom: 5%;
 }
 
 .modal-content h1 {
+    font-size: calc(1vw + 1em);
     text-align: left;
     font-family: "Source Code Pro";
     font-weight: normal;
 }
 .modal-content h2 {
-    font-family: "Source Code Pro";
+    font-family: "Source Code Pro Light";
     text-align: left;
     font-weight: normal;
     font-size: 15px;

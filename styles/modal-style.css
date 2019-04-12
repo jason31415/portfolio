@@ -228,7 +228,7 @@
     font-size: calc(1vw + 1em);
     text-align: left;
     font-family: "Source Code Pro";
-    font-weight: normal;
+    font-weight: bold;
 }
 .modal-content h2 {
     font-family: "Source Code Pro Light";

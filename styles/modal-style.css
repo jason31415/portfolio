@@ -134,7 +134,8 @@
 }
 .tags {
     color: #FF4C30;
-    font-family: "Source Code Pro Light";
+    font-family: "Source Code Pro";
+    font-weight: lighter;
     font-weight: 100;
     margin-left: 5%;
     margin-right: 5%;
@@ -228,19 +229,19 @@
     font-size: calc(1vw + 1em);
     text-align: left;
     font-family: "Source Code Pro";
-    font-weight: bold;
+    font-weight: normal;
 }
 .modal-content h2 {
-    font-family: "Source Code Pro Light";
+    font-family: "Source Code Pro";
     text-align: left;
-    font-weight: normal;
+    font-weight: lighter;
     font-size: 15px;
 }
 
 #components{
     font-size: 20px;
     font-family: "Source Code Pro";
-    font-weight: bolder;
+    font-weight: normal;
 }
 #components li {
     padding-left: none;

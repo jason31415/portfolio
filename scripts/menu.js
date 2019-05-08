@@ -6,17 +6,17 @@ var about = document.getElementById("opt-about");
 var arrow = document.getElementById("right-arrow");
 var background = document.getElementById("particles-js");
 function image_open() {
+    background.classList.remove("back-blur");
     arrow.style.transform = "translateX(-270px)";
     image_page.style.display = "grid";
     about_page.style.display = "none";
     about.classList.remove("active");
     work.classList.add("active");
-    background.style.filter = "blur(0px)";
 }
 
 function image_close() {
     arrow.style.transform = "translateX(-140px)";
-    background.style.filter = "blur(2px)";
+    background.classList.add("back-blur");
     image_page.style.display = "none";
     about_page.style.display = "grid";
     work.classList.remove("active");

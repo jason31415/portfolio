@@ -10,12 +10,12 @@
         min-width: 1000px;
         grid-column: 2/5;
         grid-row: 2/10;
-        grid-template-columns: .5fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr;
         grid-template-areas: 
-        "cat box box mood"
-        "cat wobl wobl mood"
-        "cat plant xondas xondas"
-        "cat mir cur pep";
+        " box box mood"
+        " wobl wobl mood"
+        " plant xondas xondas"
+        " mir cur pep";
     }
     .categories li {
         text-align: right;
@@ -35,12 +35,12 @@
         min-width: 800px;
         grid-column: 2/5;
         grid-row: 2/15;
-        grid-template-columns: .5fr 1fr 1fr .25fr;
+        grid-template-columns: 1fr 1fr .25fr;
         grid-template-areas: 
-        "cat box wobl"
-        "cat mood xondas"
-        "cat plant pep"
-        "cat mir cur";
+        " box wobl"
+        " mood xondas"
+        " plant pep"
+        " mir cur";
         
     }
     .categories li {
@@ -112,6 +112,7 @@
     grid-gap: 15px;
 }
 .categories {
+    display: none;
     grid-area: cat;
     white-space: nowrap;
 }
@@ -129,12 +130,12 @@
 .images .show {
     filter: opacity(1);
     border:  2px #FF4C30;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.25);
+    box-shadow: 0 2px 5px rgba(0,0,0,0);
 }
 
 .crop.show:active {
     filter: brightness(.9);
-    box-shadow: 0 0px 0px rgba(0,0,0,0.2);
+    box-shadow: 0 0px 0px rgba(0,0,0,0);
 }
 
 
@@ -142,7 +143,9 @@
     filter: blur(2px);
     image-resolution: 100px 200px;
 }
-
+.back-blur {
+    filter: blur(2px);
+}
 
 .mood {
     grid-area: mood;
@@ -249,4 +252,7 @@
 }
 .show.crop:hover .img-title {
     opacity: 1;
+}
+.cat-hide {
+    display: none;
 }

@@ -189,12 +189,12 @@ body {
     font-weight: lighter;
     list-style:disc;
     color: #FF4C30;
-    font-size: 15px;
+    font-size: calc(1vw + .5em);
     padding-left: 20px;
 }
 
 #skills-title {
-    font-size: calc(2vw + 1em);
+    font-size: calc(2vw + .25em);
     margin-bottom: 0;
     color: #FF4C30;
 }
@@ -209,7 +209,7 @@ body {
 
 #about-intro {
     display: inline-block;
-    font-size: calc(1vw + .5em);
+    font-size: calc(1vw + .25em);
     font-weight: bolder;
 }
 .favorites {

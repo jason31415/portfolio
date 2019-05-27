@@ -7,7 +7,7 @@ var arrow = document.getElementById("right-arrow");
 var background = document.getElementById("particles-js");
 function image_open() {
     background.classList.remove("back-blur");
-    arrow.style.transform = "translateX(-270px)";
+    arrow.style.transform = "translateX(-155px)";
     image_page.style.display = "grid";
     about_page.style.display = "none";
     about.classList.remove("active");
@@ -15,7 +15,7 @@ function image_open() {
 }
 
 function image_close() {
-    arrow.style.transform = "translateX(-140px)";
+    arrow.style.transform = "translateX(-80px)";
     background.classList.add("back-blur");
     image_page.style.display = "none";
     about_page.style.display = "grid";

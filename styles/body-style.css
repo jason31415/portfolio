@@ -4,65 +4,54 @@
         height: 100%;
         z-index: 1;
         display: grid;
-        grid-template-columns: .25fr 1fr 1fr 1fr .25fr;
+        grid-template-columns: .5fr 1fr 1fr 1fr .5fr;
         grid-auto-rows: auto;
     }
     .menu {
         grid-row: 1/1;
         grid-column: 2/5;
     }
-    
     .about-page {
          grid-column: 2/5;
         grid-row: 2/10;
     }
-    #menu-opts {
-        margin-left: 50px;
-    }
-    #opt-about, #opt-work {
-        white-space: nowrap;
-        display: inline-block;
-        font-size: 30px;
-        margin-left: 30px;
-    }
+    
     #right-arrow {
         display: inline-block;
     }
+     #menu-opts {
+        margin-top: 30px;
+        float: right;
+}
 }
 @media only screen and (max-width: 1150px) {
     .grid {
         height: 100%;
         z-index: 1;
         display: grid;
-        grid-template-columns: .25fr 1fr 1fr .25fr;
+        grid-template-columns: .5fr 1fr 1fr .5fr;
         grid-auto-rows: auto;
     }
     .menu {
         grid-row: 1/1;
         grid-column: 2/4;
         white-space: nowrap;
-        
     }
-    
     .about-page {
          grid-column: 2/4;
         grid-row: 2/10;
     }
-    #menu-opts {
-        white-space: nowrap;
-        margin-left: 30px;
-    }
-    #opt-about, #opt-work {
-        display: inline-block;
-        font-size: 30px;
-        margin-left: 30px;
-    }
+
     #right-arrow {
         display: inline-block;
     }
     .btn {
         white-space: nowrap;
     }
+     #menu-opts {
+        margin-top: 40px;
+        float: right;
+}
 }
 
 @media only screen and (max-width: 680px) {
@@ -74,7 +63,8 @@
         margin-bottom: 0px;
     }
     #menu-opts {
-        margin-left: 0px;
+        float: left;
+        margin: 0px;
     }
     .menu {
         white-space: normal;
@@ -89,17 +79,24 @@
     }
     
 }
+#opt-about, #opt-work {
+        white-space: nowrap;
+        display: inline-block;
+        font-size: 20px;
+        margin-left: 20px;
+    }
+
 .grid {
     margin-bottom: 100px;
 }
 footer {
     text-align: center;
-    font-family: "Major Mono Display";
+    font-family: "Source Code Pro Light";
     font-size: 15px;
-    font-weight: bolder;
     line-height: 40px;
 }
 .menu {
+    margin-top: 50px;
     color: #240C03;
 }
 
@@ -110,9 +107,9 @@ ul {
 }
 #right-arrow {
     color: #FF4C30;
-    font-size: 30px;
-    transform: translateX(-270px);
-    transition: transform .5s;
+    font-size: 15px;
+    transform: translateX(-155px);
+    transition: transform .2s;
     font-family: "Major Mono Display";
 }
 
@@ -144,6 +141,7 @@ body {
 }
 
 #name {
+    float: left;
     box-shadow: 0px 2px 5px rgba(0,0,0,.25);
     border: dashed 1px #FF4C30;
     background-color: rgba(255, 255, 255, 0.5);
@@ -151,8 +149,8 @@ body {
     color: #FF4C30;
     font-family: "Major Mono Display";
     font-weight: lighter;
-    font-size: 50px;
-    margin-right: 0px;
+    font-size: 40px;
+    margin: 0px;
     display: inline-block;
     border-radius: 5px;
 }
@@ -162,9 +160,9 @@ body {
 }
 
 #opt-about, #opt-work {
-    font-family: "Major Mono Display";
+    font-family: "Source Code Pro Light";
+    font-weight: normal;
     cursor: pointer;
-    font-weight: lighter;
 }
 
 #opt-about:hover {
@@ -175,8 +173,7 @@ body {
 }
 
 .about-page {
-    font-family: "Source Code Pro";
-    font-weight: normal;
+    font-family: "Source Code Pro Light";
     display: none;
 }
 
@@ -188,15 +185,14 @@ body {
 #about-skills {
     font-weight: lighter;
     list-style:disc;
-    color: #FF4C30;
     font-size: calc(1vw + .5em);
     padding-left: 20px;
 }
 
 #skills-title {
-    font-size: calc(2vw + .25em);
+    font-size: calc(2vw + .5em);
     margin-bottom: 0;
-    color: #FF4C30;
+
 }
 
 #headshot {
@@ -209,19 +205,17 @@ body {
 
 #about-intro {
     display: inline-block;
-    font-size: calc(1vw + .25em);
-    font-weight: bolder;
 }
 .favorites {
-    font-size: calc(1vw + 1em);
+    font-size: calc(1vw + .1em);
     margin-bottom: 0;
 }
 
 .btn {
     border-bottom: dashed 0px #FF4C30;
     z-index: 1;
-    font-family: "Major Mono Display";
-    font-size: 20px;
+    font-family: "Source Code Pro Light";
+    font-size: 15px;
     font-weight: lighter;
     border-top: none;
     border-right: none;

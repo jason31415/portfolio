@@ -42,6 +42,7 @@
         white-space: nowrap;
     }
 }
+
 @media only screen and (max-width: 680px) {
     .modal-container {
         height: 100vh;
@@ -134,8 +135,7 @@
 }
 .tags {
     color: #FF4C30;
-    font-family: "Source Code Pro";
-    font-weight: lighter;
+    font-family: "Source Code Pro Light";
     margin-left: 5%;
     margin-right: 5%;
     margin-bottom: 2.5vh;
@@ -161,9 +161,9 @@
     padding-bottom: 2.5vh;
     position: sticky;
     top: 0;
-    font-family: "Major Mono Display";
+    font-family: "Source Code Pro";
     font-size: 25px;
-    font-weight: bolder;
+    font-weight: normal;
 }
 .modal-content .close {
     font-weight: lighter;
@@ -210,27 +210,28 @@
 .description {
     border-top: solid black 1px;
     padding: 15px;
-    font-family: "Source Code Pro";
-    font-size: 17px;
+    font-family: "Source Code Pro Light";
+    font-size: 15px;
     color: black;
 }
 
 .modal-text {
     align-content: center;
     display: inline-block;
-    padding-left: 12.5%;
-    padding-right: 12.5%;
+    padding-left: 7.5%;
+    padding-right: 7.5%;
     margin-bottom: 5%;
 }
 
 .modal-content h1 {
-    font-size: calc(1vw + 1em);
+    font-size: calc(1vw + .75em);
     text-align: left;
     font-family: "Source Code Pro";
-    font-weight: bold;
+    font-weight: Lighter;
+    color: #FF4C30;
 }
 .modal-content h2 {
-    font-family: "Source Code Pro";
+    font-family: "Source Code Pro Light";
     text-align: left;
     font-weight: lighter;
     font-size: 15px;

@@ -24,6 +24,7 @@
     }
     .categories li {
         float: left;
+        line-height: 5px;
         margin-right: 10px;
     }
 }
@@ -75,6 +76,7 @@
     .categories li {
         float: left;
         margin-right: 30px;
+        line-height: 5px;
         margin-left: none;
     }
     .categories {
@@ -103,7 +105,6 @@
     }
     .categories li {
         display: none;
-        line-height: 10px;
     }
     .categories {
         width: 100%;
@@ -111,6 +112,7 @@
 }
 
 .images {
+    margin-top: 15px;
     z-index: 0;
     display: grid;
     grid-template-rows: auto;
@@ -256,7 +258,4 @@
 }
 .show.crop:hover .img-title {
     opacity: 1;
-}
-.cat-hide {
-    display: none;
 }

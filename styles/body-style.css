@@ -55,6 +55,13 @@
 }
 
 @media only screen and (max-width: 680px) {
+    .grid {
+        height: 100%;
+        z-index: 1;
+        display: grid;
+        grid-template-columns: .25fr 1fr 1fr .25fr;
+        grid-auto-rows: auto;
+    }
     .about-page {
          grid-column: 2/4;
         grid-row: 2/10;
@@ -70,7 +77,6 @@
         white-space: normal;
     }
     #opt-about, #opt-work {
-        margin-left: 0;
         display: inline-block;
         font-size: 30px;
     }
@@ -221,7 +227,7 @@ body {
     border-right: none;
     border-left: none;
     outline: none;
-    padding: 0 0px;
+    padding: 0 0;
     background-color: transparent;
     cursor: pointer;
 }

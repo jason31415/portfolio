@@ -97,7 +97,8 @@
 }
 footer {
     text-align: center;
-    font-family: "Source Code Pro Light";
+    font-family: source-code-pro, monospace;
+    font-weight: 300;
     font-size: 15px;
     line-height: 40px;
 }
@@ -166,8 +167,8 @@ body {
 }
 
 #opt-about, #opt-work {
-    font-family: "Source Code Pro Light";
-    font-weight: normal;
+    font-family: source-code-pro, monospace;
+    font-weight: 300;
     cursor: pointer;
 }
 
@@ -179,18 +180,17 @@ body {
 }
 
 .about-page {
-    font-family: "Source Code Pro Light";
+    font-family: source-code-pro, monospace;
     display: none;
 }
 
 .about-page h2 {
-    font-weight: lighter;
+    font-weight: 300;
     font-size: calc(1vw + .5em);
 }
 
 #about-skills {
-    font-weight: lighter;
-    list-style:disc;
+    list-style: disc;
     font-size: calc(1vw + .5em);
     padding-left: 20px;
 }
@@ -198,7 +198,7 @@ body {
 #skills-title {
     font-size: calc(2vw + .5em);
     margin-bottom: 0;
-
+    font-weight: 500;
 }
 
 #headshot {
@@ -209,20 +209,22 @@ body {
     margin-right: 50px;
 }
 
-#about-intro {
+#about-intro, h1 {
+    font-weight: 500;
     display: inline-block;
 }
 .favorites {
     font-size: calc(1vw + .1em);
     margin-bottom: 0;
+    
 }
 
 .btn {
     border-bottom: dashed 0px #FF4C30;
     z-index: 1;
-    font-family: "Source Code Pro Light";
+    font-family: source-code-pro, monospace;
     font-size: 15px;
-    font-weight: lighter;
+    font-weight: 300;
     border-top: none;
     border-right: none;
     border-left: none;

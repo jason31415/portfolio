@@ -234,7 +234,8 @@
     display: block;
     opacity: 0;
     color: #FF4C30;
-    font-family: "Source Code Pro Light";
+    font-family: source-code-pro, monospace;
+    font-weight: 300;
     font-size: 15px;
     position: absolute;
     transition: opacity 0;
@@ -247,9 +248,9 @@
 .img-title {
     display: inline-block;
     color: #FF4C30;
-    font-family: "Source Code Pro";
+    font-family: source-code-pro, monospace;
     font-size: 20px;
-    font-weight: normal;
+    font-weight: 500;
     position: absolute;
     bottom: 5%;
     transition: opacity 0;

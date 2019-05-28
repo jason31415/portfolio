@@ -135,14 +135,16 @@
 }
 .tags {
     color: #FF4C30;
-    font-family: "Source Code Pro Light";
+    font-family: source-code-pro, monospace;
+    font-weight: 300;
     margin-left: 5%;
     margin-right: 5%;
     margin-bottom: 2.5vh;
     font-size: calc(1vw + .5em);
 }
 .intro {
-    font-family: "Source Code Pro";
+    font-family: source-code-pro, monospace;
+    font-weight: 500;
     margin-left: 5%;
     margin-right: 5%;
     margin-bottom: 2.5vh;
@@ -161,9 +163,9 @@
     padding-bottom: 2.5vh;
     position: sticky;
     top: 0;
-    font-family: "Source Code Pro";
+    font-family: source-code-pro, monospace;
     font-size: 25px;
-    font-weight: normal;
+    font-weight: 500;
 }
 .modal-content .close {
     font-weight: lighter;
@@ -190,7 +192,8 @@
     display: inline-block;
     float: left;
     color: black;
-    font-family: "Source Code Pro";
+    font-family: source-code-pro, monospace;
+    font-weight: 500;
     width: 33%;
     margin-bottom: 10px;
 }
@@ -210,7 +213,8 @@
 .description {
     border-top: solid black 1px;
     padding: 15px;
-    font-family: "Source Code Pro Light";
+    font-family: source-code-pro, monospace;
+    font-weight: 300;
     font-size: 15px;
     color: black;
 }
@@ -226,21 +230,21 @@
 .modal-content h1 {
     font-size: calc(1vw + .75em);
     text-align: left;
-    font-family: "Source Code Pro";
-    font-weight: Lighter;
+    font-family: source-code-pro, monospace;
+    font-weight: 500;
     color: #FF4C30;
 }
 .modal-content h2 {
-    font-family: "Source Code Pro Light";
+    font-family: source-code-pro, monospace;
     text-align: left;
-    font-weight: lighter;
+    font-weight: 300;
     font-size: 15px;
 }
 
 #components{
     font-size: 20px;
-    font-family: "Source Code Pro";
-    font-weight: normal;
+    font-family: source-code-pro, monospace;
+    font-weight: 500;
 }
 #components li {
     padding-left: none;

@@ -1,110 +1,79 @@
 
-@media only screen and (min-width: 1150px) {
+@media only screen and (min-width: 680px) {
     .grid {
-        height: 100%;
-        z-index: 1;
+        height: 100vh;
         display: grid;
-        grid-template-columns: .5fr 1fr 1fr 1fr .5fr;
+        grid-template-columns: 25% 70% 5%;
         grid-auto-rows: auto;
     }
-    .menu {
-        grid-row: 1/1;
+    .about-page {
         grid-column: 2/5;
+        grid-row: 1/4;
     }
-    .about-page {
-         grid-column: 2/5;
-        grid-row: 2/10;
-    }
-    
-    #right-arrow {
-        display: inline-block;
-    }
-     #menu-opts {
-        margin-top: 30px;
-        float: right;
-}
-}
-@media only screen and (max-width: 1150px) {
-    .grid {
-        height: 100%;
-        z-index: 1;
-        display: grid;
-        grid-template-columns: .5fr 1fr 1fr .5fr;
-        grid-auto-rows: auto;
-    }
-    .menu {
-        grid-row: 1/1;
-        grid-column: 2/4;
-        white-space: nowrap;
-    }
-    .about-page {
-         grid-column: 2/4;
-        grid-row: 2/10;
-    }
-
     #right-arrow {
         display: inline-block;
     }
     .btn {
-        white-space: nowrap;
-    }
-     #menu-opts {
-        margin-top: 40px;
+        font-size: 25px;
         float: right;
-}
+    }
 }
 
+
 @media only screen and (max-width: 680px) {
+    .btn {
+        font-size: 20px;
+        float: right;
+    }
     .grid {
         height: 100%;
         z-index: 1;
         display: grid;
-        grid-template-columns: .25fr 1fr 1fr .25fr;
+        grid-template-columns: .1fr 1fr .1fr;
         grid-auto-rows: auto;
     }
     .about-page {
-         grid-column: 2/4;
+         grid-column: 2/2;
         grid-row: 2/10;
     }
     #name {
         margin-bottom: 0px;
-    }
-    #menu-opts {
-        float: left;
-        margin: 0px;
-    }
-    .menu {
-        white-space: normal;
-    }
-    #opt-about, #opt-work {
-        display: inline-block;
-        font-size: 30px;
     }
     #right-arrow {
         display: none;
     }
     
 }
-#opt-about, #opt-work {
-        white-space: nowrap;
-        display: inline-block;
-        font-size: 20px;
-        margin-left: 20px;
-    }
 
+a:link {
+    color: black;
+}
+
+a:visited {
+    color: black;
+    text-decoration: none;
+}
 .grid {
     margin-bottom: 100px;
 }
 footer {
+    width: 50%;
+    position: fixed;
     text-align: center;
+    bottom: 5px;
     font-family: source-code-pro, monospace;
     font-weight: 300;
-    font-size: 15px;
-    line-height: 40px;
+    font-size: 20px;
+    height: 5%;
+    z-index: 1;
+    color: #FF4C30;
 }
 .menu {
-    margin-top: 50px;
-    color: #240C03;
+    z-index: 2;
+    padding: 2.5vw;
+    position: fixed;
+    width: 20vw;
+    text-align: center;
 }
 
 ul {
@@ -114,30 +83,41 @@ ul {
 }
 #right-arrow {
     color: #FF4C30;
-    font-size: 15px;
-    transform: translateX(-155px);
+    font-size: 25px;
+    transform: translateX(15px);
     transition: transform .2s;
     font-family: "Major Mono Display";
 }
 
 body {
     margin: 0;
-    padding: 0;
-}
-#particles-js {
-    transition: filter .5s;
-    align-content: center;
-    pointer-events: none;
-    position: fixed;
-    z-index: -1;
-    width: 100%;
-    height: 100vh;
-    background: #00;
+    overflow-x: hidden;
+    overflow-y: auto;
 }
 
-#particles-js2 {
-    filter: blur(3px);
-    transition: filter 1s;
+
+#background {
+    opacity: 1;
+    position: absolute;
+    display: block;
+}
+#back_color {
+    background-color: rgb(250,250,250);
+    width: 100%;
+    height: 200vh;
+    z-index: -3;
+}
+#backcover {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: rgb(250,250,250);
+    z-index: -1;
+    transition: opacity .5s;
+}
+
+#particles-js {
+    transition: filter .5s;
     align-content: center;
     pointer-events: none;
     position: fixed;
@@ -148,16 +128,14 @@ body {
 }
 
 #name {
-    float: left;
-    box-shadow: 0px 2px 5px rgba(0,0,0,.25);
+    box-shadow: 0px 2px 5px rgba(0,0,0,0);
     border: dashed 1px #FF4C30;
     background-color: rgba(255, 255, 255, 0.5);
     padding: 15px;
     color: #FF4C30;
     font-family: "Major Mono Display";
     font-weight: lighter;
-    font-size: 40px;
-    margin: 0px;
+    font-size: calc(2vw + 1em);
     display: inline-block;
     border-radius: 5px;
 }
@@ -166,22 +144,58 @@ body {
     color: #FF4C30;
 }
 
+#cat-menu {
+    margin-top: 1.25%;
+    margin-bottom: 1.25%;
+    z-index: -1;
+    float: right;
+}
+
+.cat-hide {
+    transform: translateX(0px);
+    opacity: 0;
+}
+.tools {
+    position: fixed;
+}
 #opt-about, #opt-work {
     font-family: source-code-pro, monospace;
-    font-weight: 300;
+    font-weight: 200;
     cursor: pointer;
+    display: inline-block;
+    font-size: 30px;
+    margin-left: 5%;
 }
 
 #opt-about:hover {
     color: #FF4C30;
 }
-.menu .active {
+#opt-work:hover {
     color: #FF4C30;
+}
+.menu-opts .active {
+    color: #FF4C30;
+}
+
+.menu-opts {
+    z-index: 0;
+    opacity: 1;
+    transition: opacity .1s, transform .2s ease-out;
+    will-change: transform;
+    text-align: end;
+    margin-top: 5%;
+}
+.menu-hide {
+    transform: translateY(-50px);
+    opacity: 0;
 }
 
 .about-page {
     font-family: source-code-pro, monospace;
     display: none;
+    height: 100vh;
+    padding: 2.5vw;
+    margin-bottom: 20vh;
 }
 
 .about-page h2 {
@@ -209,34 +223,30 @@ body {
     margin-right: 50px;
 }
 
-#about-intro, h1 {
+h1 {
     font-weight: 500;
     display: inline-block;
 }
-.favorites {
-    font-size: calc(1vw + .1em);
-    margin-bottom: 0;
-    
-}
 
 .btn {
+    display: block;
     border-bottom: dashed 0px #FF4C30;
     z-index: 1;
     font-family: source-code-pro, monospace;
-    font-size: 15px;
     font-weight: 300;
     border-top: none;
     border-right: none;
     border-left: none;
     outline: none;
-    padding: 0 0;
     background-color: transparent;
     cursor: pointer;
+    padding: none;
+    transition: transform .25s ease-out, opacity .25s ease;
+    will-change: transform;
 }
 
-
 .btn.active {
-    border-bottom: dashed 1px #FF4C30;
+    border-bottom: dashed 0px #FF4C30;
     color: #FF4C30;
 }
 .btn:hover {

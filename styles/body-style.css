@@ -86,7 +86,7 @@ ul {
     font-size: 25px;
     transform: translateX(15px);
     transition: transform .2s;
-    font-family: "Major Mono Display";
+    font-family: 'Major Mono Display', monospace;
 }
 
 body {
@@ -133,7 +133,7 @@ body {
     background-color: rgba(255, 255, 255, 0.5);
     padding: 15px;
     color: #FF4C30;
-    font-family: "Major Mono Display";
+    font-family: 'Major Mono Display', monospace;
     font-weight: lighter;
     font-size: calc(2vw + 1em);
     display: inline-block;

@@ -165,7 +165,9 @@
 }
 #page3 {
     grid-template-areas: 
-        "photo";
+        "photo"
+        "dmix"
+        "rmp";
 }
 
 .proj-entry {

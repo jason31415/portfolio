@@ -164,6 +164,9 @@
 #photo-banner {
     background-position: 50% 60%;
 }
+#dmix-banner {
+    background-position: 50% 10%;
+}
 
 .quote {
     font-family: source-code-pro, monospace;
